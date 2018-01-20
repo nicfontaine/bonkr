@@ -13,6 +13,10 @@
 </head>
 <body>
 
+  <div id='loader' class='loader show pos-fixed pos-all-0'>
+    <div class='pos-abs-center text-center'>loader</div>
+  </div>
+
   <header>
 
     <nav role='navigation'>
@@ -25,158 +29,166 @@
   
   </header>
 
-  <main class='pd-a-20'>
+  <main>
 
-    <h1 class='underline'>H1 .underline</h1>
-    <h2>H2</h2>
-    <h3>H3</h3>
-    <h4>H4</h4>
-    <h5>H5</h5>
-    <h6>H6</h6>
-    
-    <h2 class='underline mg-t-40'>Text</h2>
+    <section class='mg-0-auto pd-a-40 w-mx-1200'>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas finibus mauris eu gravida. Nunc convallis eget tellus a auctor. Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    </p>
-    <p>
-      Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam. Sed dictum lorem ut libero ornare, quis porta tellus pellentesque. Vivamus vitae feugiat metus. Proin eleifend congue sapien, at convallis neque. Sed dignissim euismod porttitor. Pellentesque molestie dictum tellus, vel pretium risus tincidunt sit amet. <a href=''>Link</a>
-    </p>
+      <h1 class='underline'>H1 .underline</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <h5>H5</h5>
+      <h6>H6</h6>
     
-    <h5>To-Do</h5>
-    <ul>
-      <li>Lock TAB &amp; SHIFT + TAB into dialog when open</li>
-      <li>Add opion, select, slider, etc., input.disabled</li>
-      <li>.noselect, .mode-dark</li>
-      <li>Grid system, w/ breakpoints(?)</li>
-      <li>+ Buttons - knockout, ghost, disabled, etc.</li>
-      <li>Card, figure, image types</li>
-      <li>Header, footer, sidebar, fieldset, figure</li>
-      <li>Tooltips</li>
-      <li>sub, cite, etc.</li>
-    </ul>
-    
-    <hr class='mg-t-30 mg-b-25'>
-    
-    <ol class='mg-b-30'>
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
-    </ol>
-    
-    <blockquote>
+      <h2 class='underline mg-t-40' id='text'>Text<a href='#text' class='linker'>&para;</a></h2>
+
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas finibus mauris eu gravida. Nunc convallis eget tellus a auctor.
-        </p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas finibus mauris eu gravida. Nunc convallis eget tellus a auctor. Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      </p>
+      <p>
+        Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam. Sed dictum lorem ut libero ornare, quis porta tellus pellentesque. Vivamus vitae feugiat metus. Proin eleifend congue sapien, at convallis neque. Sed dignissim euismod porttitor. Pellentesque molestie dictum tellus, vel pretium risus tincidunt sit amet. <a href=''>Link</a>
+      </p>
+      
+      <h5>To-Do</h5>
+      <ul>
+        <li>Lock TAB &amp; SHIFT + TAB into dialog when open</li>
+        <li>Add opion, select, slider, etc., input.disabled</li>
+        <li>.noselect, .mode-dark</li>
+        <li>Grid system, w/ breakpoints(?)</li>
+        <li>+ Buttons - knockout, ghost, disabled, etc.</li>
+        <li>Card, figure, image types</li>
+        <li>Header, footer, sidebar, fieldset, figure</li>
+        <li>Tooltips</li>
+        <li>sub, cite, etc.</li>
+      </ul>
+      
+      <hr class='mg-t-30 mg-b-25'>
+      
+      <ol class='mg-b-30'>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ol>
+      
+      <blockquote>
         <p>
-          Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam.
-        </p>
-    </blockquote>
-    
-    <code class='pd-a-10 rnd-5'>code</code>
-    
-    <h2 class='underline mg-t-40'>Button, Link, .btn</h2>
-    
-    <button type='button' class='mg-b-20 mg-r-20'>button <span class='text-code'>.mg-r-20</span></button
-      ><button type='button' class='mg-b-20'>button</button
-      ><button type='button' class='d-block mg-b-20'>button <span class='text-code'>.d-block</span></button
-      ><button type='button' class='d-block rnd-4 mg-b-20'>button <span class='text-code'>.d-block .rnd-4</span></button
-      ><button type='button' class='d-block rnd-10 mg-b-20'>button <span class='text-code'>.d-block .rnd-10</span></button
-      ><a href='' class='btn mg-b-20'>a <span class='text-code'>.btn</span></a>
-    
-    <button type='button' class='full-width'>button <span class='text-code'>.full-width</span></button>
-    
-    <h2 class='underline mg-t-40'>Dialog Modal</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas finibus mauris eu gravida. Nunc convallis eget tellus a auctor.
+          </p>
+          <p>
+            Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam.
+          </p>
+      </blockquote>
       
-      <button type='button' class='d-block dialog-btn-open mg-b-20'>
-        Dialog 01 <span class='text-code'>.dialog-btn-open</span>
-      </button>
-      <button type='button' class='d-block dialog-btn-open'>
-        Dialog 02 <span class='text-code'>.dialog-btn-open</span>
-      </button>
-    
-    <h2 class='underline mg-t-40'>Form</h2>
-    
-    <form>
-    <label class='d-block text-center mg-b-15'>label <span class='text-code'>.d-block .text-center</span></label>
-      <div class='d-flx flx-r flx-1'>
-        <label class='mg-r-10'>label<input type='text' placeholder='text' class='mg-b-10 mg-t-5'></label>
-        <label>label<input type='email' placeholder='email' class='mg-b-10 mg-t-5'></label>
-      </div>
-      <input type='number' placeholder='0' class='mg-b-10'>
-      <input type='tel' placeholder='000-000-0000' class='mg-b-10'>
-      <input type='password' placeholder='********' class='mg-b-10'>
-      <textarea placeholder='textarea' class='mg-b-10'></textarea>
-      <input type='checkbox' class='mg-b-10'><input type='checkbox' class='mg-b-10' checked><br>
-      <input type='radio' name='radio' class='mg-b-10'><input type='radio' name='radio' class='mg-b-10' checked>
-      <input type='submit' class='d-block' value='Submit'>
-    </form>
-    
-    <h2 class='underline mg-t-40'>Flex</h2>
-    
-    <h5 class='mg-b-0 mg-t-15'>CLASSES ON FLEX CONTAINER:</h5>
-    <div class='text-code text-bold'>.d-flx .flx-r .flx-s-0 .flx-wr-w .flx-spc-10</div>
-    <div class='text-italic mg-b-15'>flex, row, shrink 0, wrap, spacing 10</div>
-    
-    <div class='d-flx flx-r flx-s-0 flx-wr-w flx-spc-10'>
-      <button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
+      <code class='pd-a-10 rnd-5'>code</code>
+      
+      <h2 class='underline mg-t-40'>Button, Link, .btn</h2>
+      
+      <button type='button' class='mg-b-20 mg-r-20'>button <span class='text-code'>.mg-r-20</span></button
+        ><button type='button' class='mg-b-20'>button</button
+        ><button type='button' class='d-block mg-b-20'>button <span class='text-code'>.d-block</span></button
+        ><button type='button' class='d-block rnd-4 mg-b-20'>button <span class='text-code'>.d-block .rnd-4</span></button
+        ><button type='button' class='d-block rnd-10 mg-b-20'>button <span class='text-code'>.d-block .rnd-10</span></button
+        ><a href='' class='btn mg-b-20'>a <span class='text-code'>.btn</span></a
+        >
+      
+      <button type='button' class='full-width mg-b-20'>button <span class='text-code'>.full-width</span></button
+      ><button type='button' class='d-block mg-b-20' disabled>button <span class='text-code'>:disabled</span></button
+      ><a href='' class='btn mg-b-20 disabled'>a <span class='text-code'>.btn .disabled</span></a
       >
-    </div>
-    
-    <h5 class='mg-b-0 mg-t-15'>CLASSES ON FLEX CONTAINER:</h5>
-    <div class='text-code text-bold'>.d-flx .flx-r .flx-s-1 .flx-wr-n .flx-spc-5</div>
-    <div class='text-italic mg-b-15'>flex, row, shrink 1, nowrap, spacing 5</div>
-    
-    <div class='d-flx flx-r flx-s-1 flx-wr-n flx-spc-5'>
-      <button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button
-      ><button type='button'>flex child</button>
       
-    </div>
-    
-    <h2 class='underline mg-t-40'>Padding</h2>
-    
-    <div class='text-italic mg-t-20 mg-b-15'>all, top, right, bottom, left: 0, 5, 10, 15, 20, 25, 30, 35, 40</div>
-    <div>
-      <a href='#' class='btn pd-a-15 text-code'>.pd-a-15</a>
-      <a href='#' class='btn pd-a-0 pd-t-15 text-code'>.pd-t-15</a>
-      <a href='#' class='btn pd-a-0 pd-r-30 text-code'>.pd-r-30</a>
-      <a href='#' class='btn pd-a-0 pd-b-10 text-code'>.pd-b-10</a>
-      <a href='#' class='btn pd-a-0 pd-l-40 text-code'>.pd-l-40</a>
-    </div>
-    
-    <h2 class='underline mg-t-40'>Margin</h2>
-    
-    <div class='text-italic mg-b-15'>all, top, right, bottom, top: 0, 5, 10, 15, 20, 25, 30, 35, 40</div>
-    <div>
-      <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
-        <a href='#' class='btn pd-a-0 mg-a-10 text-code'>.mg-a-10</a>
-      </div>
-      <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
-        <a href='#' class='btn pd-a-0 mg-t-15 text-code'>.mg-t-15</a>
+      <h2 class='underline mg-t-40'>Dialog Modal</h2>
+        
+        <button type='button' class='d-block dialog-btn-open mg-b-20'>
+          Dialog 01 <span class='text-code'>.dialog-btn-open</span>
+        </button>
+        <button type='button' class='d-block dialog-btn-open'>
+          Dialog 02 <span class='text-code'>.dialog-btn-open</span>
+        </button>
+      
+      <h2 class='underline mg-t-40'>Form</h2>
+      
+      <form>
+      <label class='d-block text-center mg-b-15'>label <span class='text-code'>.d-block .text-center</span></label>
+        <div class='d-flx flx-r flx-1'>
+          <label class='mg-r-10'>label<input type='text' placeholder='text' class='mg-b-10 mg-t-5'></label>
+          <label>label<input type='email' placeholder='email' class='mg-b-10 mg-t-5'></label>
         </div>
-      <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
-        <a href='#' class='btn pd-a-0 mg-r-40 text-code'>.mg-r-40</a>
+        <input type='number' placeholder='0' class='mg-b-10'>
+        <input type='tel' placeholder='000-000-0000' class='mg-b-10'>
+        <input type='password' placeholder='********' class='mg-b-10'>
+        <textarea placeholder='textarea' class='mg-b-10'></textarea>
+        <input type='checkbox' class='mg-b-10'><input type='checkbox' class='mg-b-10' checked><br>
+        <input type='radio' name='radio' class='mg-b-10'><input type='radio' name='radio' class='mg-b-10' checked>
+        <input type='submit' class='d-block' value='Submit'>
+      </form>
+      
+      <h2 class='underline mg-t-40'>Flex</h2>
+      
+      <h5 class='mg-b-0 mg-t-15'>CLASSES ON FLEX CONTAINER:</h5>
+      <div class='text-code text-bold'>.d-flx .flx-r .flx-s-0 .flx-wr-w .flx-spc-10</div>
+      <div class='text-italic mg-b-15'>flex, row, shrink 0, wrap, spacing 10</div>
+      
+      <div class='d-flx flx-r flx-s-0 flx-wr-w flx-spc-10'>
+        <button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        >
       </div>
-      <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
-        <a href='#' class='btn pd-a-0 mg-b-10 text-code'>.mg-b-10</a>
+      
+      <h5 class='mg-b-0 mg-t-15'>CLASSES ON FLEX CONTAINER:</h5>
+      <div class='text-code text-bold'>.d-flx .flx-r .flx-s-1 .flx-wr-n .flx-spc-5</div>
+      <div class='text-italic mg-b-15'>flex, row, shrink 1, nowrap, spacing 5</div>
+      
+      <div class='d-flx flx-r flx-s-1 flx-wr-n flx-spc-5'>
+        <button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button
+        ><button type='button'>flex child</button>
+        
       </div>
-      <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
-        <a href='#' class='btn pd-a-0 mg-l-20 text-code'>.mg-l-20</a>
+      
+      <h2 class='underline mg-t-40'>Padding</h2>
+      
+      <div class='text-italic mg-t-20 mg-b-15'>all, top, right, bottom, left: 0, 5, 10, 15, 20, 25, 30, 35, 40</div>
+      <div>
+        <a href='#' class='btn pd-a-15 text-code'>.pd-a-15</a>
+        <a href='#' class='btn pd-a-0 pd-t-15 text-code'>.pd-t-15</a>
+        <a href='#' class='btn pd-a-0 pd-r-30 text-code'>.pd-r-30</a>
+        <a href='#' class='btn pd-a-0 pd-b-10 text-code'>.pd-b-10</a>
+        <a href='#' class='btn pd-a-0 pd-l-40 text-code'>.pd-l-40</a>
       </div>
-    </div>
+      
+      <h2 class='underline mg-t-40'>Margin</h2>
+      
+      <div class='text-italic mg-b-15'>all, top, right, bottom, top: 0, 5, 10, 15, 20, 25, 30, 35, 40</div>
+      <div>
+        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
+          <a href='#' class='btn pd-a-0 mg-a-10 text-code'>.mg-a-10</a>
+        </div>
+        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
+          <a href='#' class='btn pd-a-0 mg-t-15 text-code'>.mg-t-15</a>
+          </div>
+        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
+          <a href='#' class='btn pd-a-0 mg-r-40 text-code'>.mg-r-40</a>
+        </div>
+        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
+          <a href='#' class='btn pd-a-0 mg-b-10 text-code'>.mg-b-10</a>
+        </div>
+        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-15'>
+          <a href='#' class='btn pd-a-0 mg-l-20 text-code'>.mg-l-20</a>
+        </div>
+      </div>
+
+    </section>
     
   </main>
 
@@ -223,6 +235,7 @@
   </div>
 
   <script src="bonkr-dialog.js"></script>
+  <script src="bonkr-loader.js"></script>
 
 </body>
 </html>
