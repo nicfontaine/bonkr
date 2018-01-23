@@ -20,7 +20,7 @@
   <header>
 
     <nav role='navigation'>
-      <ul class='d-flx flx-row flx-1 text-center'>
+      <ul class='d-flx flx-row flx-children-1 text-center'>
         <li><a href=''>nav</a></li>
         <li><a href=''>flex</a></li>
         <li><a href=''>items</a></li>
@@ -40,7 +40,7 @@
       <h5>H5</h5>
       <h6>H6</h6>
     
-      <h2 class='underline mg-t-40' id='text'>Text<a href='#text' class='linker'>&para;</a></h2>
+      <h2 class='underline mg-t-40' id='text'>Text<a href='#text' class='linker' tabindex='-1'>&para;</a></h2>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas finibus mauris eu gravida. Nunc convallis eget tellus a auctor. Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
@@ -51,11 +51,13 @@
       
       <h5>To-Do</h5>
       <ul>
+        <li>Semantic structure guide, with default spacing values</li>
+        <li>em based margin &amp; padding system</li>
         <li>Lock TAB &amp; SHIFT + TAB into dialog when open</li>
-        <li>Add opion, select, slider, etc., input.disabled</li>
-        <li>.noselect, .mode-dark</li>
+        <li>Add opion, select, slider</li>
+        <li>.mode-dark for body</li>
         <li>Grid system, w/ breakpoints(?)</li>
-        <li>+ Buttons - knockout, ghost, disabled, etc.</li>
+        <li>+ Buttons - knockout, ghost, circle, etc.</li>
         <li>Card, figure, image types</li>
         <li>Header, footer, sidebar, fieldset, figure</li>
         <li>Tooltips</li>
@@ -113,7 +115,7 @@
       
       <form>
       <label class='d-block text-center mg-b-15'>label <span class='text-code'>.d-block .text-center</span></label>
-        <div class='d-flx flx-r flx-1'>
+        <div class='d-flx flx-row flx-children-1'>
           <label class='mg-r-10'>label<input type='text' placeholder='text' class='mg-b-10 mg-t-5'></label>
           <label>label<input type='email' placeholder='email' class='mg-b-10 mg-t-5'></label>
         </div>
@@ -127,12 +129,57 @@
       </form>
       
       <h2 class='underline mg-t-40'>Flex</h2>
+
+      <h4 class='mg-b-0'>Parent Container Classes</h4>
+      <i class='mg-b-20'>Define parent container as display flex, then add classes to customize or define children</i>
+      <ul class='text-code mg-b-30' style='list-style: none;'>
+        <li><b>.d-flx</b> { display: flex; }</li>
+        <li><b>.flx-row</b> { flex-direction: row; }</li>
+        <li><b>.flx-col</b> { flex-direction: column; }</li>
+        <li>&zwnj;</li>
+        <li><b>.flx-wr-n</b> { flex-wrap: nowrap; }</li>
+        <li><b>.flx-wr-w</b> { flex-wrap: wrap; }</li>
+        <li><b>.flx-wr-r</b> > * { flex-wrap: wrap-reverse;}</li>
+        <li>&zwnj;</li>
+        <li><b>.flx-spc-5</b> { margin-left: -5px; margin-right: -5px; }</li>
+        <li><b>.flx-spc-10</b> { margin-left: -10px; margin-right: -10px; }</li>
+        <li><b>.flx-spc-15</b> { margin-left: -15px; margin-right: -15px; }</li>
+        <li><b>.flx-spc-20</b> { margin-left: -20px; margin-right: -20px; }</li>
+        <li>&zwnj;</li>
+        <li><b>.flx-children-0</b> > * { flex: 0; }</li>
+        <li><b>.flx-children-1</b> > * { flex: 1; }</li>
+        <li>&zwnj;</li>
+        <li><b>.flx-children-g-0</b> > * { flex-grow: 0; }</li>
+        <li><b>.flx-children-g-1</b> > * { flex-grow: 1; }</li>
+        <li><b>.flx-children-s-0</b> > * { flex-shrink: 0; }</li>
+        <li><b>.flx-children-s-1</b> > * { flex-shrink: 1; }</li>
+        <li>&zwnj;</li>
+        <li><b>.flx-children-spc-5</b> > * { margin: 0 5px 10px; }</li>
+        <li><b>.flx-children-spc-10</b> > * { margin: 0 10px 20px; }</li>
+        <li><b>.flx-children-spc-15</b> > * { margin: 0 15px 30px; }</li>
+        <li><b>.flx-children-spc-20</b> > * { margin: 0 20px 40px; }</li>
+      </ul>
+
+      <h4 class='mg-b-0'>Children Classes</h4>
+      <i class='mg-b-20'>Define sizing proportions of flex children</i>
+      <ul class='text-code mg-b-30' style='list-style: none;'>
+        <li><b>.flx-child-0</b> { flex: 0; }</li>
+        <li><b>.flx-child-0-5</b> { flex: 0.5; }</li>
+        <li><b>.flx-child-1</b> { flex: 1; }</li>
+        <li><b>.flx-child-1-5</b> { flex: 1.5; }</li>
+        <li><b>.flx-child-2</b> { flex: 2; }</li>
+        <li><b>.flx-child-2-5</b> { flex: 2.5; }</li>
+        <li><b>.flx-child-3</b> { flex: 3; }</li>
+        <li><b>.flx-child-3-5</b> { flex: 3.5; }</li>
+        <li><b>.flx-child-4</b> { flex: 4; }</li>
+      </ul>
       
-      <h5 class='mg-b-0 mg-t-15'>CLASSES ON FLEX CONTAINER:</h5>
-      <div class='text-code text-bold'>.d-flx .flx-r .flx-s-0 .flx-wr-w .flx-spc-10</div>
-      <div class='text-italic mg-b-15'>flex, row, shrink 0, wrap, spacing 10</div>
+      <h4 class=''>Examples</h4>
+
+      <i>flex, row, shrink 0, wrap, spacing 10</i>
+      <div class='mg-b-20 text-code'><b>.d-flx .flx-row .flx-wr-w .flx-children-s-0 .flx-children-spc-10</b></div>
       
-      <div class='d-flx flx-r flx-s-0 flx-wr-w flx-spc-10'>
+      <div class='d-flx flx-row flx-wr-w flx-children-s-0 flx-children-spc-10 mg-b-30'>
         <button type='button'>flex child</button
         ><button type='button'>flex child</button
         ><button type='button'>flex child</button
@@ -143,11 +190,10 @@
         >
       </div>
       
-      <h5 class='mg-b-0 mg-t-15'>CLASSES ON FLEX CONTAINER:</h5>
-      <div class='text-code text-bold'>.d-flx .flx-r .flx-s-1 .flx-wr-n .flx-spc-5</div>
-      <div class='text-italic mg-b-15'>flex, row, shrink 1, nowrap, spacing 5</div>
+      <i>flex, row, nowrap, shrink 1, spacing 5</i>
+      <div class='mg-b-20 text-code'><b>.d-flx .flx-row .flx-wr-n .flx-children-s-1 .flx-children-spc-5</b></div>
       
-      <div class='d-flx flx-r flx-s-1 flx-wr-n flx-spc-5'>
+      <div class='d-flx flx-row flx-wr-n flx-children-s-1 flx-children-spc-5'>
         <button type='button'>flex child</button
         ><button type='button'>flex child</button
         ><button type='button'>flex child</button
