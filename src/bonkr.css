@@ -147,6 +147,7 @@ hr {
 
 a { text-decoration: underline; font-weight: bold; }
 a, a:active, a:visited, a:hover { color: inherit;  }
+/*(NOTE) Should add some hover style for <a> */
 
 p {
   line-height: 1.45;
@@ -309,7 +310,7 @@ button:focus, .btn:focus, input[type='submit']:focus {
 button:hover, .btn:hover, input[type='submit']:hover {
   background: linear-gradient(#f9f9f9,#eaeaea);
   border-color: #bbb;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 button:active, .btn:active, input[type='submit']:active {
