@@ -151,7 +151,7 @@ a, a:active, a:visited, a:hover { color: inherit;  }
 p {
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.3em;
+  margin-bottom: 1.3rem;
   color: #333;
 }
 
@@ -163,7 +163,7 @@ blockquote {
   padding: 15px;
   font-style: italic;
   font-size: 0.95em;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   margin-left: 15px;
   position: relative;
   padding-right: 50px;
@@ -243,6 +243,10 @@ label {
 }
 
 code {
+  display: inline-block;
+}
+
+code.block {
   display: block;
   margin-left: 15px;
   margin-right: 40px;
@@ -395,13 +399,9 @@ code {
   top: 0; right: 0; bottom: 0; left: 0;
 }
 
-.flt-l {
-  float: left;
-}
-
-.flt-r {
-  float: right;
-}
+.flt-l { float: left; }
+.flt-r { float: right; }
+.flt-clr { display: table; clear: both; content: ''; }
 
 /*** Text Styles ***/
 
