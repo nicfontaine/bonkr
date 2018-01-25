@@ -63,7 +63,7 @@ sup { top: -0.5em; }
 img { border-style: none; }
 code, kbd, pre, samp { font-family: mo
   pace, monospace; font-size: 1em; }
-figure { margin: 1em 40px; }
+figure { margin: 0 0 1em; }
 optgroup { font-weight: bold; }
 fieldset { margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
 legend { box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal; }
@@ -168,6 +168,7 @@ blockquote p {
 
 ul, ol { padding: 0; margin-left: 15px; }
 ul { padding-left: 1em; }
+li { padding-bottom: 0.5em; }
 ol { padding-left: 1.25em; }
 
 img {
@@ -180,6 +181,8 @@ svg {
   width: 100%;
   height: auto;
 }
+
+iframe { border: none; }
 
 /*** Nav ***/
 
@@ -278,7 +281,7 @@ button.full-width, input[type='submit'].full-width { display: block; width: 100%
 /******************/
 
 body, h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  /*color: #222;*/
 }
 
 h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline {
@@ -287,7 +290,7 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
 }
 
 section, article {
-  color: #3a3a3a;
+  /*color: #3a3a3a;*/
 }
 
 hr {
@@ -587,6 +590,10 @@ pre {
 .mg-l-40 { margin-left: 40px; }
 
 /*** Max Width ***/
+.w-mx-200 { max-width: 200px; }
+.w-mx-250 { max-width: 250px; }
+.w-mx-300 { max-width: 300px; }
+.w-mx-350 { max-width: 350px; }
 .w-mx-400 { max-width: 400px; }
 .w-mx-450 { max-width: 450px; }
 .w-mx-500 { max-width: 500px; }
