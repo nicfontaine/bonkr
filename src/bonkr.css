@@ -1,46 +1,33 @@
-*,
-*::after,
-*::before {
+/*** General QOL ***/
+*, *::after, *::before {
   box-sizing: border-box;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-kerning: auto;
-}
+  font-kerning: auto; }
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
   font-size: 17px;
-  line-height: 1.7em;
-}
+  line-height: 1.7em; }
 
 /* Reset focus outline */
-
 :focus { outline: none; }
 ::-moz-focus-inner { border: 0; }
 
+/* Selection helper classes */
 .noselect {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-
-a.btn:focus {
-  outline: none;
+  -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.allselect { -webkit-touch-callout: all; -webkit-user-select: all; -khtml-user-select: all; -moz-user-select: all; -ms-user-select: all; user-select: all;
 }
 
 /*** Reset from necolas, normalize.css ***/
-
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { display: block; }
 audio, canvas, progress, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
@@ -77,34 +64,27 @@ textarea { overflow: auto; }
 ::-webkit-input-placeholder { color: inherit; opacity: 0.54; }
 ::-webkit-file-upload-button { -webkit-appearance: button; font: inherit; }
 
-/*** Generic Element ***/
-
-main {
-  overflow-x: hidden;
-}
+/*** Generic Elements ***/
+main { overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
   margin-top: 0;
-  position: relative;
-}
+  position: relative; }
 
 h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline {
-  padding-bottom: 0.15em;
-}
+  padding-bottom: 0.15em; }
 
 .loader {
   z-index: 500;
   background: #fff;
   pointer-events: none;
   opacity: 0;
-  transition: all 0.3s;
-}
+  transition: all 0.3s; }
 
 .loader.show {
   opacity: 1;
-  pointer-events: auto;
-}
+  pointer-events: auto; }
 
 .linker {
   position: absolute;
@@ -112,8 +92,7 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
   transform: translateX(-100%);
   font-size: inherit;
   text-decoration: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 h1 { font-size: 3.2em; margin-bottom: 0.6em; }
 h2 { font-size: 2.7em; margin-bottom: 0.6em; }
@@ -124,31 +103,33 @@ h6 { font-size: 1em; margin-bottom: 1.4em; }
 
 hr {
   border: none;
-  height: 2px;
-}
+  height: 2px; }
 
 a { text-decoration: underline; font-weight: bold; }
 a, a:active, a:visited, a:hover { color: inherit;  }
 /*(NOTE) Should add some hover style for <a> */
 
+/* Default Layout Styling for Semantic Elements */
+section {
+  padding: 2.35rem;
+  max-width: 1200px;
+  margin: 0 auto }
+
 p {
-  line-height: 1.45;
+  line-height: 1.45rem;
   margin-top: 0;
-  margin-bottom: 1.3rem;
-}
+  margin-bottom: 1.3rem; }
 
 p:last-child {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 blockquote {
-  padding: 15px;
+  padding: 0.95rem;
   font-size: 0.95em;
   margin-bottom: 2rem;
   margin-left: 15px;
   position: relative;
-  padding-right: 50px;
-}
+  padding-right: 50px; }
 
 blockquote:before {
   content: '"';
@@ -159,12 +140,10 @@ blockquote:before {
   top: 33px;
   font-size: 3em;
   line-height: 0;
-  opacity: 0.3;
-}
+  opacity: 0.3; }
 
 blockquote p {
-  font-style: italic;
-}
+  font-style: italic; }
 
 ul, ol { padding: 0; margin-left: 15px; }
 ul { padding-left: 1em; }
@@ -173,73 +152,76 @@ ol { padding-left: 1.25em; }
 
 img {
   display: block;
-  width: 100%;
-}
+  width: 100%; }
 
 svg {
   display: block;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 iframe { border: none; }
 
-/*** Nav ***/
+/*** Tables ***/
+table {
+  text-align: left; }
 
+table {
+  /*border-collapse: collapse;*/
+  border-spacing: 0; }
+
+th, td {
+  border-bottom: 1px solid #eee; }
+
+th {
+  font-size: 1.15rem; }
+
+/* Alternating Background Colour */
+/*tr:nth-child(odd) td {
+  background: #f4f4f4; }*/
+
+td, th {
+  padding: 0.3rem .5rem;
+  line-height: 1.45; }
+
+/*** Nav ***/
+/*(NOTE) Add some default styling */
+/*body > header { border-bottom: 1px solid #ccc; }*/
 nav ul { list-style: none; margin: 0; padding: 0; }
 nav ul li a { display: block; }
 
 /*** Forms ***/
-
-input[type='email'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='url'],
-textarea,
-select,
-option {
+input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], textarea, select, option {
   width: 100%;
   box-shadow: none;
   font-size: 1em;
   border: none;
   font-family: inherit;
-
-  /*border: 1px solid;*/
   border-bottom: 3px solid;
   border-radius: 4px;
-  padding: 10px;
-}
+  padding: .58rem; }
 
-select { padding: 0 10px; }
+select { padding: 0 .58rem; }
 
 textarea {
-  min-height: 200px;
+  min-height: 12rem;
   font-size: 1em;
-  resize: vertical;
-}
+  resize: vertical; }
 
 input[type='checkbox'],
 input[type='radio'] {
-  margin-right: 15px;
-}
+  margin-right: .95rem; }
 
 label {
   font-weight: 600;
   letter-spacing: -1px;
   cursor: default;
-  margin: 0;
-}
+  margin: 0; }
 
 pre {
-  white-space: pre-wrap;
-}
+  white-space: pre-wrap; }
 
 code {
-  display: inline-block;
-}
+  display: inline-block; }
 
 button, .btn, input[type='submit'] {
   /* display: inline-block; */
@@ -248,104 +230,77 @@ button, .btn, input[type='submit'] {
   border-width: 2px;
   border-style: solid;
   font-size: 1em;
-  padding: 8px 15px;
+  padding: .47rem .95rem;
   color: inherit;
   font-family: inherit;
-  font-weight: bold;
-}
-
-button.full-width, input[type='submit'].full-width { display: block; width: 100%; }
+  font-weight: bold; }
 
 /* (NOTE) May conflict w/ links or buttons, not sure yet */
 .btn, .btn:hover, .btn:focus { text-decoration: none; display: inline-block; }
 
 ::-webkit-input-placeholder {
   font-style: italic;
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 :-moz-placeholder {
   font-style: italic;  
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 ::-moz-placeholder {
   font-style: italic;  
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 :-ms-input-placeholder {  
   font-style: italic; 
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
-/******************/
+/*(NOTE) Can we just do this instead? */
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+  font-style: italic;
+  opacity: 0.5; }
+
 /*** BW Styling ***/
-/******************/
-
-body, h1, h2, h3, h4, h5, h6 {
-  /*color: #222;*/
-}
-
 h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline {
   border-bottom: 2px solid #efefef;
-  padding-bottom: 0.15em;
-}
-
-section, article {
-  /*color: #3a3a3a;*/
-}
+  padding-bottom: 0.15rem; }
 
 hr {
-  background: #efefef;
-}
+  background: #efefef; }
 
 ::selection { background: #ccc; }
 ::-moz-selection { background: #ccc; }
 
 /* Redefine base focus style */
 a:focus {
-  /*outline: 1px solid #333;*/
-  background: #eee;
-}
-
-/*body > header { border-bottom: 1px solid #ccc; }*/
+  background: #eee; }
 
 a.linker { color: #eee; }
 a.linker:hover { color: #ddd; }
+/*(NOTE) Add :before to linker w/ paragraph symbol */
 
 /* Buttons & Link Buttons */
-
 button, .btn, input[type='submit'] {
   background: linear-gradient(#f2f2f2,#e7e7e7);
-  border-color: #d5d5d5;
-}
-
-/* Focus & Hover will be given Focus outline, once Active is off */
+  border-color: #d5d5d5; }
+/* Focus */
 button:focus, .btn:focus, input[type='submit']:focus {
   border-color: #717171;
   background: linear-gradient(#eee,#dcdcdc);
-  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-}
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1); }
 
+/* Focus + Hover will be given Focus outline, once Active is off */
 button:focus:hover, .btn:focus:hover, input[type='submit']:focus:hover {
   border-color: #7c7c7c;
   background: linear-gradient(#f2f2f2,#e7e7e7);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+/* Hover */
 button:hover, .btn:hover, input[type='submit']:hover {
   background: linear-gradient(#f9f9f9,#eee);
   border-color: #c6c6c6;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-/* Active & Hover will retain flat styling */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+/* Active, & Active + Hover will retain flat styling */
 button:active, .btn:active, input[type='submit']:active, button:active:hover, .btn:active:hover, input[type='submit']:active:hover {
   box-shadow: none;
   background: #e9e9e9;
-  border-color: #e9e9e9;
-}
-
-/* (NOTE) Focus & Hover need a style */
-
+  border-color: #e9e9e9; }
+/* Disabled */
 button:disabled, a.disabled, input[type='submit']:disabled, button:hover:disabled, a.disabled:hover, input[type='submit']:hover:disabled, button:active:disabled, a.disabled:active, input[type='submit']:active:disabled {
   background: #ccc;
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 15px, rgba(255,255,255,.2) 15px, rgba(255,255,255,.2) 30px);
@@ -354,103 +309,52 @@ button:disabled, a.disabled, input[type='submit']:disabled, button:hover:disable
   color: #777;
   font-weight: normal;
   /*cursor: not-allowed;*/
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 /*** Form Inputs ***/
+input[type='checkbox']:focus, input[type='radio']:focus {
+  box-shadow: 0 0 3px rgba(0,0,0,0.6); } 
 
-input[type='checkbox']:focus,
-input[type='radio']:focus {
-  box-shadow: 0 0 3px rgba(0,0,0,0.6);
-} 
-
-input[type='email'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='url'],
-textarea,
-select,
-option {;
+input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], textarea, select, option {
   background-color: #eee;
-  border-color: #ddd;
-}
+  border-color: #ddd; }
 
-input[type='email']:focus,
-input[type='number']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='text']:focus,
-input[type='url']:focus,
-textarea:focus,
-select:focus,
-option:focus {
+input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus, option:focus {
   background-color: #e6e6e6;
-  border-color: #e6e6e6;
-  border-bottom: 3px solid #aaa;
-}
+  border-bottom: 3px solid #aaa; }
+
+/*** Opinionated Text Colours (Comment out if interfering) ***/
+body, h1, h2, h3, h4, h5, h6 {
+  color: #222; }
 
 blockquote {
   background: #eee;
-  color: #444;
   border-left: 6px solid #d2d2d2;
-}
+  color: #444; }
 
 code {
   background: #333;
   color: #f9f9f9;
   background-size: 15px 15px;
   background-image: linear-gradient(to right, #3c3c3c 1px, transparent 1px), linear-gradient(to bottom, #3c3c3c 1px, transparent 1px);
-  border-left: 5px solid #555;
-}
+  border-left: 5px solid #555; }
 
 pre {
-  background: #eee;
-}
+  background: #eee; }
 
-/******************/
-/*** Templating ***/
-/******************/
+section p, article p {
+  color: #3a3a3a; }
 
-/*** Positioning ***/
-
-.pos-abs-center {
-  position: absolute;
-  right: 0; left: 0;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.pos-abs {
-  position: absolute;
-}
-.pos-rel {
-  position: relative;
-}
-.pos-fixed {
-  position: fixed;
-}
-
-.pos-all-0 {
-  top: 0; right: 0; bottom: 0; left: 0;
-}
-
-.flt-l { float: left; }
-.flt-r { float: right; }
-.flt-clr { display: table; clear: both; content: ''; }
+/*** Opinionated Button/Link Colours (Comment out if interfering) ***/
 
 /*** Text Styles ***/
-
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-code { font-family: 'Courier New'; }
 .text-bold { font-weight: bold; }
 .text-italic { font-style: italic; }
-
+/* (NOTE) Need to Re-style */
 .text-key {
   padding: 7px 9px;
   border-radius: 3px;
@@ -467,11 +371,9 @@ pre {
   /*box-shadow: 0 1px 5px rgba(0,0,0,0.5);*/
   color: #fff;
   font-weight: bold;
-  text-shadow: 0 0 2px rgba(0,0,0,0.2);
-}
+  text-shadow: 0 0 2px rgba(0,0,0,0.2); }
 
 /*** Border Radius ***/
-
 .rnd-2 { border-radius: 2px; }
 .rnd-3 { border-radius: 3px; }
 .rnd-4 { border-radius: 4px; }
@@ -481,11 +383,30 @@ pre {
 .rnd-8 { border-radius: 8px; }
 .rnd-9 { border-radius: 9px; }
 .rnd-10 { border-radius: 10px; }
+.rnd-pct-50 { border-radius: 50%; } /* Circle */
 
-.rnd-pct-50 { border-radius: 50%; }
+/*** Templating --- Position ***/
+.pos-abs-center {
+  position: absolute;
+  right: 0; left: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%); }
+.pos-abs { position: absolute; }
+.pos-rel { position: relative; }
+.pos-fixed { position: fixed; }
+.pos-all-0 { top: 0; right: 0; bottom: 0; left: 0; }
 
-/*** Padding ***/
+/*** Templating --- Display ***/
+.d-block, button.d-block, .btn.d-block, .input[type='submit'].d-block { display: block; }
+.d-table { display: table; }
 
+/*** Templating --- Float ***/
+.flt-l { float: left; }
+.flt-r { float: right; }
+.flt-clr { display: table; clear: both; content: ''; }
+
+/*** Templating --- Padding ***/
 .pd-a-0 { padding: 0; }
 .pd-a-5, .pd-ch-5 > * { padding: 5px; }
 .pd-a-10, .pd-ch-10 > * { padding: 10px; }
@@ -536,8 +457,7 @@ pre {
 .pd-l-35 { padding-left: 35px; }
 .pd-l-40 { padding-left: 40px; }
 
-/*** Margin ***/
-
+/*** Templating --- Margin ***/
 .mg-0-auto { margin: 0 auto; }
 .mg-a-0 { margin: 0; }
 .mg-a-5 { margin: 5px; }
@@ -589,7 +509,11 @@ pre {
 .mg-l-35 { margin-left: 35px; }
 .mg-l-40 { margin-left: 40px; }
 
-/*** Max Width ***/
+/*** Width Helper ***/
+.w-full { width: 100%; max-width: none; }
+/*button.w-full, input[type='submit'].w-full { display: block; }*/
+
+/*** Templating --- Max Width ***/
 .w-mx-200 { max-width: 200px; }
 .w-mx-250 { max-width: 250px; }
 .w-mx-300 { max-width: 300px; }
@@ -611,10 +535,6 @@ pre {
 .w-mx-1100 { max-width: 1100px; }
 .w-mx-1150 { max-width: 1150px; }
 .w-mx-1200 { max-width: 1200px; }
-
-/*** Display ***/
-.d-block, button.d-block, .btn.d-block, .input[type='submit'].d-block { display: block; }
-.d-table { display: table; }
 
 /*** Justify ***/
 .just-bt { justify-content: space-between; }
@@ -667,11 +587,9 @@ pre {
 .flx-child-4 { flex: 4; }
 
 /*** Dialog ***/
-
 body.dialog-active {
   overflow-y: hidden;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .dialog {
   pointer-events: none;
@@ -680,54 +598,43 @@ body.dialog-active {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   transition: all 0.15s;
-  
   overflow-y: auto;
-  /* padding: 20px; */
+  padding: 1.17rem;
 }
 
 .dialog.active {
   pointer-events: auto;
   opacity: 1;
-  z-index: 100;
-}
+  z-index: 100; }
 
 .dialog-outer {
   width: 100%;
-  padding: 20px;
+  padding: 1.17rem;
   background: rgba(0,0,0,0.5);
   height: 100%; 
-  top: 0; bottom: 0;
+  top: 0; bottom: 0; right: 0; left: 0;
   position: fixed;
   overflow-y: auto;
-  z-index: 90;
-}
+  z-index: 90; }
 
 .dialog-inner {
-  max-width: 500px;
   background: #fff;
   margin: 0 auto;
   z-index: 105;
-  /* position: fixed; */
-  /* right: 20px; left: 20px; */
-  
   position: relative;
   top: 0; bottom: 0; right: 0; left: 0;
-  margin-bottom: 20px;
-}
+  margin-bottom: 1.17rem; }
 
 .dialog.center .dialog-inner {
   position: absolute;
-  /* right: 0; left: 0; */
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
-  bottom: initial;
-}
+  bottom: initial; }
 
 .dialog.center .dialog-outer {
   position: fixed;
-  top: 0; bottom: 0;
-}
+  top: 0; bottom: 0; }
 
 .dialog-mask {
   background: rgba(0,0,0,0.5);
@@ -736,16 +643,13 @@ body.dialog-active {
   z-index: 100;
   cursor: pointer;
   pointer-events: none;
-  display: none;
-}
+  display: none; }
 
 .dialog-btn-close {
   position: absolute;
-  top: 0; right: 0;
-}
+  top: 0; right: 0; }
 
 /*** < 768px ***/
-
 @media (max-width: 768px) {
   h1 { font-size: 2.9em; }
   h2 { font-size: 2.4em; }

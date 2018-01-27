@@ -17,7 +17,6 @@ var dialog = {
   escListener: undefined,
   // Toggle modal per index, change focus between open/close buttons
   ModalToggle: function (index) {
-
     let target = domDialog.dialog.modal[index]
     
     // Dialog is closed. Open
@@ -112,7 +111,7 @@ if (domDialog.dialog.modal.length > 0) {
           domDialog.body[0].classList.remove('dialog-active')
           document.removeEventListener('keydown', dialog.escListener)
           domDialog.dialog.modal[index].classList.remove('active')
-          domDialog.dialog.btnOpen[index].focus()
+          domDialog.dialog.btnOpen[dialog.openIndex].focus()
         }
       })(i)
     })
