@@ -20,6 +20,7 @@ body {
 /* Reset focus outline */
 :focus { outline: none; }
 ::-moz-focus-inner { border: 0; }
+* { -webkit-tap-highlight-color: transparent; }
 
 /* Selection helper classes */
 .noselect {
@@ -81,7 +82,10 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
   background: #fff;
   pointer-events: none;
   opacity: 0;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
 
 .loader.show {
   opacity: 1;
@@ -101,7 +105,7 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
   transform: translateX(-100%);
   font-size: inherit;
   text-decoration: none;
-}
+  pointer-events: auto; }
 
 h1 { font-size: 3.4rem; margin-bottom: 1.74rem; }
 h2 { font-size: 2.8rem; margin-bottom: 1.74rem; }
