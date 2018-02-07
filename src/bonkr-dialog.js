@@ -53,8 +53,6 @@ var dialog = {
       // Focus Open btn again
       if (domDialog.dialog.btnOpen[index] !== undefined) {
         domDialog.dialog.btnOpen[index].focus()
-      } else {
-        console.log('bonkr js - we would normally focus dialog open btn on close, but an open button for this index does not exist')
       }
     }
     
@@ -111,7 +109,9 @@ if (domDialog.dialog.modal.length > 0) {
           domDialog.body[0].classList.remove('dialog-active')
           document.removeEventListener('keydown', dialog.escListener)
           domDialog.dialog.modal[index].classList.remove('active')
-          domDialog.dialog.btnOpen[dialog.openIndex].focus()
+          if (domDialog.dialog.btnOpen[i] !== undefined) {
+            domDialog.dialog.btnOpen[dialog.openIndex].focus()
+          }
         }
       })(i)
     })

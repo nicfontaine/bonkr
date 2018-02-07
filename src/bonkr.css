@@ -84,6 +84,7 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
   opacity: 0;
   transition: all 0.3s;
   position: fixed;
+  overflow: hidden;
   top: 0; right: 0; bottom: 0; left: 0;
 }
 
@@ -93,19 +94,12 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
 
 .linker {
   position: absolute;
-  left: -0.82rem;
   transform: translateX(-100%);
-  font-size: inherit;
+  font-size: 3rem;
   text-decoration: none;
-  cursor: pointer; }
-
-.linker:before {
-  content: '¶';
-  left: -0.82rem;
-  transform: translateX(-100%);
-  font-size: inherit;
-  text-decoration: none;
-  pointer-events: auto; }
+  cursor: pointer;
+  top: 2.2rem;
+  left: 1.6rem; }
 
 h1 { font-size: 3.4rem; margin-bottom: 1.74rem; }
 h2 { font-size: 2.8rem; margin-bottom: 1.74rem; }
@@ -142,6 +136,7 @@ a:focus { background: #eee; }
 section {
   padding: 1.76rem 2.35rem;
   max-width: 1200px;
+  position: relative;
   margin: 0 auto }
 
 p {
