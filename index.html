@@ -9,7 +9,9 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./src/bonkr.css">
-
+  <style>
+    .title { margin-top: 4.5rem; }
+  </style>
 </head>
 <body>
 
@@ -57,14 +59,26 @@
       <h2 class='underline' id='text'>Text</h2>
       <a href='#text' class='linker' tabindex='-1' title='paragraph anchor link'>&para;</a>
 
+      <h4 class='title'>Paragraph</h4>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas finibus mauris eu gravida. Nunc convallis eget tellus a auctor. Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
       </p>
       <p>
-        Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam. Sed dictum lorem ut libero ornare, quis porta tellus pellentesque. Vivamus vitae feugiat metus. Proin eleifend congue sapien, at convallis neque. Sed dignissim euismod porttitor. Pellentesque molestie dictum tellus, vel pretium risus tincidunt sit amet. <a href=''>Link</a>
+        Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam. Sed dictum lorem ut libero ornare, quis porta tellus pellentesque. Vivamus vitae feugiat metus. Proin eleifend congue sapien, at convallis neque. Sed dignissim euismod porttitor. Pellentesque molestie dictum tellus, vel pretium risus tincidunt sit amet. 
       </p>
+
+      <h4 class='title'>Link</h4>
+
+      <p>
+        <a href=''>I am a link</a>
+      </p>
+
+      <h4 class='title'>Hr</h4>
       
       <hr>
+
+      <h4 class='title'>Lists</h4>
 
       <ul>
         <li>one</li>
@@ -77,10 +91,10 @@
         <li>two</li>
         <li>three</li>
       </ol>
+
+      <h4 class='title'>Blockquote</h4>
       
       <blockquote class='quote'>
-
-        <h5>&lt;blockquote&gt;</h5>
 
         <p>
           Giving <code>.quote</code> will add this nifty <em>quote</em> on the right.
@@ -91,37 +105,45 @@
         </p>
 
       </blockquote>
+
+      <h4 class='title'>Codes</h4>
       
       <p>
-        <code><b>&lt;code&gt;</b></code> Is inline by default.
+        <code>&lt;code&gt;</code> Is inline
       </p>
 
-      <p>
-        <code class='pd-a-2 rnd-5 d-block'><b>&lt;code&gt;</b> .d-block .pd-a-2</code>
-      </p>
-
-      <p>
-        <pre><b>&lt;pre&gt;<br></b>Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam.</pre>
-      </p>
+<pre><code><span class='tag'>&lt;pre&gt;</span>
+  <span class='tag'>&lt;code&gt;</span>
+    // Wrap <strong>code</strong> in <strong>pre</strong> for block
+  <span class='tag'>&lt;/code&gt;</span>
+<span class='tag'>&lt;/pre&gt;</span>
+</code></pre>
 
     </section>
 
     <!--*************** BUTTONS, LINKS *******************-->
     <section>  
 
-      <h2 class='underline' id='buttons'>Button, Link, .btn</h2>
+      <h2 class='underline' id='buttons'>Buttons</h2>
       <a href='#buttons' class='linker' tabindex='-1' title='paragraph anchor link'>&para;</a>
       
       <button type='button' class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button
         ><button type='button' class='mg-b-4'>button</button
         ><button type='button' class='d-block mg-b-4'>button <span class='text-code'>.d-block</span></button
         ><button type='button' class='d-block rnd-4 mg-b-4'>button <span class='text-code'>.d-block .rnd-4</span></button
-        ><button type='button' class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button
-        ><a href='' class='btn mg-b-4'>a <span class='text-code'>.btn</span></a
-        >
+        ><button type='button' class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button>
+
+      <h4 class='title'>Link with .btn class</h4>
+
+      <a href='' class='btn mg-b-4'>a <span class='text-code'>.btn</span></a>
       
-      <button type='button' class='w-full mg-b-4'>button <span class='text-code'>.w-full</span></button
-      ><button type='button' class='d-block mg-b-4' disabled>button <span class='text-code'>:disabled</span></button
+      <h4 class='title'>Full Width</h4>
+
+      <button type='button' class='w-full mg-b-4'>button <span class='text-code'>.w-full</span></button>
+
+      <h4 class='title'>Disabled</h4>
+
+      <button type='button' class='d-block mg-b-4' disabled>button <span class='text-code'>:disabled</span></button
       ><a class='btn mg-b-4 disabled'>a <span class='text-code'>.btn .disabled</span></a
       >
 
