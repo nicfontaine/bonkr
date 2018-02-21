@@ -63,43 +63,76 @@ var dialog = {
 // Add Dialog events
 if (domDialog.dialog.modal.length > 0) {
   Array.from(domDialog.dialog.modal).forEach((dModal,i) => {
-    if (domDialog.dialog.btnOpen[i] !== undefined) {
-      // Open button
-      domDialog.dialog.btnOpen[i].addEventListener('click', function() {
-        dialog.ModalToggle(i)
+
+    let dNo = undefined
+    // data attribute to associate open button & dialog modal
+    // If it exists, we'll use that for the index. otherwise, just use the existing order
+    if (open.hasAttribute('data-dialog-no') && modal.hasAttribute('data-dialog-no')) {
+      dNo = open.getAttribute('data-dialog-no')
+    } else {
+      dNo = i
+      console.log('bonkr - no data attribute "data-dialog-no", just using index of dialog classes')
+    }
+
+    let open = domDialog.dialog.btnOpen[dNo]
+    let close = domDialog.dialog.btnClose[dNo]
+    let outer = domDialog.dialog.outer[dNo]
+    let inner = domDialog.dialog.inner[dNo]
+    let modal = domDialog.dialog.modal[dNo]
+
+    // Open Button
+    if (open !== undefined && open !== null) {
+      open.addEventListener('click', function() {
+        dialog.ModalToggle(dNo)
       })
-      domDialog.dialog.btnOpen[i].addEventListener('touchstart', function(e) {
+      open.addEventListener('touchstart', function(e) {
         e.preventDefault()
         e.stopPropagation()
-        dialog.ModalToggle(i)
+        dialog.ModalToggle(dNo)
       },{passive:false})
+    } else {
+      console.log('bonkr dialog error - no open button exists to display dialog')
     }
+
     // Close button
-    domDialog.dialog.btnClose[i].addEventListener('click', function() {
-      dialog.ModalToggle(i)
-    })
-    domDialog.dialog.btnClose[i].addEventListener('touchstart', function(e) {
-      e.preventDefault()
-      e.stopPropagation()
-      dialog.ModalToggle(i)
-    },{passive:false})
-    // Close on outer click
-    domDialog.dialog.outer[i].addEventListener('click', function(e) {
-      dialog.ModalToggle(i)
-    })
-    domDialog.dialog.outer[i].addEventListener('touchstart', function(e) {
-      e.preventDefault()
-      e.stopPropagation()
-      dialog.ModalToggle(i)
-    },{passive:false})
-    // Disable toggle on children of outer
-    domDialog.dialog.inner[i].addEventListener('click', function(e) {
-      e.stopPropagation()
-    })
-    domDialog.dialog.inner[i].addEventListener('touchstart', function(e) {
-      e.preventDefault()
-      e.stopPropagation()
-    },{passive:false})
+    if (close !== undefined && close !== null) {
+      close.addEventListener('click', function() {
+        dialog.ModalToggle(dNo)
+      })
+      close.addEventListener('touchstart', function(e) {
+        e.preventDefault()
+        e.stopPropagation()
+        dialog.ModalToggle(dNo)
+      },{passive:false})
+    } else {
+      console.log('bonkr dialog warning - no close button associated with dialog')
+    }
+
+    // Outer to close
+    if (outer !== undefined && outer !== null) {
+      outer.addEventListener('click', function(e) {
+        dialog.ModalToggle(dNo)
+      })
+      outer.addEventListener('touchstart', function(e) {
+        e.preventDefault()
+        e.stopPropagation()
+        dialog.ModalToggle(dNo)
+      },{passive:false})
+
+      // Inner - Disable toggle on children of outer
+      if (inner !== undefined && inner !== null) {
+        inner.addEventListener('click', function(e) {
+          e.stopPropagation()
+        })
+        inner.addEventListener('touchstart', function(e) {
+          e.preventDefault()
+          e.stopPropagation()
+        },{passive:false})
+      }
+
+    } else {
+      console.log('bonkr dialog warning - no .dialog-outer exists. This is used to cover the page content & make closing easier')
+    }
 
     // Add esc key function to Document, to close dialog
     // Keep function reference in dialog obj, so we can remove on close & not keep listening
@@ -108,17 +141,17 @@ if (domDialog.dialog.modal.length > 0) {
         if (e.keyCode === 27) { // Esc key
           domDialog.body[0].classList.remove('dialog-active')
           document.removeEventListener('keydown', dialog.escListener)
-          domDialog.dialog.modal[index].classList.remove('active')
-          if (domDialog.dialog.btnOpen[i] !== undefined) {
+          modal.classList.remove('active')
+          if (open !== undefined) {
             domDialog.dialog.btnOpen[dialog.openIndex].focus()
           }
         }
-      })(i)
+      })(dNo)
     })
 
     // If any are set to .active on load, focus that dialog's close button
     if (dModal.classList.contains('active')) {
-      domDialog.dialog.btnClose[i].focus()
+      close.focus()
     }
 
   })
