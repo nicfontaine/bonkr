@@ -97,7 +97,7 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
   transform: translateX(-100%);
   text-decoration: none;
   cursor: pointer;
-  left: -1rem; }
+  left: -0.6rem; }
 
 h1 { font-size: 3.4rem; margin-bottom: 1.74rem; }
 h2 { font-size: 2.8rem; margin-bottom: 1.74rem; }
@@ -130,11 +130,16 @@ a:hover:before, a:focus:before {
 a:focus { background: #eee; }
 
 /* Default Layout Styling for Semantic Elements */
+article {
+  margin: 1.76rem 0;
+  background: #f2f2f2;
+}
+
 section {
-  padding: 1.76rem 2.35rem;
-  max-width: 1200px;
   position: relative;
-  margin: 0 auto }
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1.76rem 2.35rem; }
 
 p {
   margin-top: 0;
@@ -265,6 +270,7 @@ code {
   display: inline-block;
   padding: 0 4px;
   margin: 0 0.3rem;
+  line-height: 1.3rem;
   font-size: 0.9rem;
   border-radius: 3px; }
 
@@ -325,8 +331,9 @@ hr {
 /*a:focus {
   background: #eee; }*/
 
-a.linker { color: #eee; }
-a.linker:hover { color: #ddd; }
+a.linker { color: rgba(0,0,0,0.06); }
+a.linker:hover { color: rgba(0,0,0,0.1); }
+a.linker:before { display: none; } /* turn off :before underline;
 /*(NOTE) Add :before to linker w/ paragraph symbol */
 
 /* Buttons & Link Buttons */
@@ -421,6 +428,7 @@ section p, article p {
 .text-code { font-family: 'Courier New'; }
 .text-bold { font-weight: bold; }
 .text-italic { font-style: italic; }
+.text-up { text-transform: uppercase; }
 /* (NOTE) Need to Re-style */
 .text-key {
   padding: 7px 9px;

@@ -40,7 +40,7 @@
     <!--*************** Text *******************-->
     <section>
 
-      <h3>Paragraph</h3>
+      <h3 id='paragraph'>Paragraph <a href='#paragraph' class='linker' title='anchor to paragraph'>#</a></h3>
 
       <p>
         Font-sizing is <code>rem</code> based, relative to <code>html { font-size: 17px; line-height: 1.6 }</code>
@@ -67,7 +67,7 @@
 
     <section>
 
-      <h3>Headings</h3>
+      <h3 id='headings'>Headings <a href='#headings' class='linker' title='anchor to headings'>#</a></h3>
 
       <h1>H1 <code>3.4rem</code></h1>
       <h2>H2 <code>2.8rem</code></h2>
@@ -88,7 +88,7 @@
 
     <section>
 
-      <h3>Lists</h3>
+      <h3 id='lists'>Lists <a href='#lists' class='linker' title='anchor to lists'>#</a></h3>
 
       <ul>
         <li>one</li>
@@ -106,7 +106,7 @@
 
     <section>
 
-      <h3>Blockquote</h3>
+      <h3 id='blockquote'>Blockquote <a href='#blockquote' class='linker' title='anchor to blockquote'>#</a></h3>
       
       <blockquote class='quote'>
 
@@ -124,7 +124,7 @@
 
     <section>
 
-      <h3>Codes</h3>
+      <h3 id='codes'>Codes <a href='#codes' class='linker' title='anchor to codes'>#</a></h3>
       
       <p>
         <code>&lt;code&gt;</code> Is inline
@@ -139,10 +139,48 @@
 
     </section>
 
+    <!--*************** SECTIONS *******************-->    
+    <section>
+
+    <h3 id='sections'>Sections <a href='#sections' class='linker' title='anchor to buttons'>#</a></h3>
+
+    <p>
+      The basics of structure in <b>bonkr</b> are focused on <code>&lt;main&gt;</code> content. 
+    </p>
+
+    <blockquote>
+      <p><code>&lt;nav&gt;</code> is unique to each case &amp; is therefore left alone.</p>
+    </blockquote>
+
+    <p>
+      Each section on this page lies within a (you guessed it) <code>&lt;section&gt;</code>, which are <b>centered</b>, with <b>padding</b>, &amp; <b>max-width</b>.
+    </p>
+
+<pre><code><span class='tag'>section {</span>
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1.76rem 2.35rem;
+<span class='tag'>}</span></code></pre>
+
+    </section>
+
+    <!--*************** ARTICLE *******************-->
+    <article>
+      <section>
+
+        <h3 id='articles'>Articles <a href='#articles' class='linker' title='anchor to buttons'>#</a></h3>
+
+        <p>
+          An <code>&lt;article&gt;</code> is used to make a bar. A <code>&lt;section&gt;</code> is nested inside of it to &mdash; center, add padding, &amp; set max-width (per above). This is helpful when you want a <code>background-colour</code>, <code>background-image</code>, or <code>width: 100%</code> content.
+        </p>
+
+      </section>
+    </article>
+
     <!--*************** BUTTONS, LINKS *******************-->
     <section>  
 
-      <h3>Buttons</h3>
+      <h3 id='buttons'>Buttons <a href='#buttons' class='linker' title='anchor to buttons'>#</a></h3>
       
       <button type='button' class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button
         ><button type='button' class='mg-b-4'>button</button
@@ -174,7 +212,7 @@
     <!--*************** MODAL *******************-->
     <section>  
       
-      <h3>Dialog Modal</h3>
+      <h3 id='dialogs'>Dialog Modal <a href='#dialogs' class='linker' title='anchor to dialogs'>#</a></h3>
 
       <p>
         Each button below has <code>dialog-btn-open</code> class and a <code>data-dialog-id</code> attribute that corresponds to a dialog modal's <code>#dialog-&lt;id&gt;</code>.
@@ -210,7 +248,7 @@
     <!--*************** FORM, INPUTS *******************-->
     <section>  
 
-      <h3>Form</h3>
+      <h3 id='form'>Form <a href='#form' class='linker' title='anchor to formd'>#</a></h3>
       
       <form>
       <label class='d-block text-center mg-b-3'>label <span class='text-code'>.d-block .text-center</span></label>
@@ -262,7 +300,7 @@
     <!--*************** TABLES *******************-->
     <section>  
       
-      <h3>Tables</h3>
+      <h3 id='tables'>Tables <a href='#tables' class='linker' title='anchor to tables'>#</a></h3>
 
       <table class='w-full'>
         <thead>
@@ -406,56 +444,58 @@
       </div>
 
       <h4 class='mg-b-0'>Parent Container Classes</h4>
+
       <p>
         <em>Define parent container as display flex, then add classes to customize or define children</em>
       </p>
-      <ul style='list-style: none;'>
-        <code class='pd-a-1'>
-          <li><b>.d-flx</b> { display: flex; }</li>
-          <li><b>.flx-row</b> { flex-direction: row; }</li>
-          <li><b>.flx-col</b> { flex-direction: column; }</li>
-          <li>&zwnj;</li>
-          <li><b>.flx-wr-n</b> { flex-wrap: nowrap; }</li>
-          <li><b>.flx-wr-w</b> { flex-wrap: wrap; }</li>
-          <li><b>.flx-wr-r</b> > * { flex-wrap: wrap-reverse;}</li>
-          <li>&zwnj;</li>
-          <li><b>.flx-spc-1</b> { margin-left: -0.3rem; margin-right: -0.3rem; }</li>
-          <li><b>.flx-spc-2</b> { margin-left: -0.59rem; margin-right: -0.59rem; }</li>
-          <li><b>.flx-spc-3</b> { margin-left: -0.88rem; margin-right: -0.88rem; }</li>
-          <li><b>.flx-spc-4</b> { margin-left: -1.18rem; margin-right: -1.18rem; }</li>
-          <li>&zwnj;</li>
-          <li><b>.flx-children-0</b> > * { flex: 0; }</li>
-          <li><b>.flx-children-1</b> > * { flex: 1; }</li>
-          <li>&zwnj;</li>
-          <li><b>.flx-children-g-0</b> > * { flex-grow: 0; }</li>
-          <li><b>.flx-children-g-1</b> > * { flex-grow: 1; }</li>
-          <li><b>.flx-children-s-0</b> > * { flex-shrink: 0; }</li>
-          <li><b>.flx-children-s-1</b> > * { flex-shrink: 1; }</li>
-          <li>&zwnj;</li>
-          <li><b>.flx-children-spc-1</b> > * { margin: 0 0.3rem 0.6rem; }</li>
-          <li><b>.flx-children-spc-2</b> > * { margin: 0 0.59rem 1.18rem; }</li>
-          <li><b>.flx-children-spc-3</b> > * { margin: 0 0.88rem 1.76rem; }</li>
-          <li><b>.flx-children-spc-4</b> > * { margin: 0 1.18rem 2.36rem; }</li>
-        </code>
-      </ul>
+
+<pre><code class='pd-a-1'>
+  <span class='tag'>.d-flx {</span> display: flex; <span class='tag'>}</span>
+  <span class='tag'>.flx-row {</span> flex-direction: row; <span class='tag'>}</span>
+  <span class='tag'>.flx-col {</span> flex-direction: column; <span class='tag'>}</span>
+
+  <span class='tag'>.flx-wr-n {</span> flex-wrap: nowrap; <span class='tag'>}</span>
+  <span class='tag'>.flx-wr-w {</span> flex-wrap: wrap; <span class='tag'>}</span>
+  <span class='tag'>.flx-wr-r > * {</span> flex-wrap: wrap-reverse; <span class='tag'>}</span>
+
+  <span class='tag'>.flx-spc-1 {</span> margin-left: -0.3rem; margin-right: -0.3rem; <span class='tag'>}</span>
+  <span class='tag'>.flx-spc-2 {</span> margin-left: -0.59rem; margin-right: -0.59rem; <span class='tag'>}</span>
+  <span class='tag'>.flx-spc-3 {</span> margin-left: -0.88rem; margin-right: -0.88rem; <span class='tag'>}</span>
+  <span class='tag'>.flx-spc-4 {</span> margin-left: -1.18rem; margin-right: -1.18rem; <span class='tag'>}</span>
+  
+  <span class='tag'>.flx-children-0  > * {</span> flex: 0; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-1 > * {</span> flex: 1; <span class='tag'>}</span>
+  
+  <span class='tag'>.flx-children-g-0 > * {</span> flex-grow: 0; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-g-1 > * {</span> flex-grow: 1; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-s-0 > * {</span> flex-shrink: 0; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-s-1 > * {</span> flex-shrink: 1; <span class='tag'>}</span>
+  
+  <span class='tag'>.flx-children-spc-1 > * {</span> margin: 0 0.3rem 0.6rem; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-spc-2 > * {</span> margin: 0 0.59rem 1.18rem; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-spc-3 > * {</span> margin: 0 0.88rem 1.76rem; <span class='tag'>}</span>
+  <span class='tag'>.flx-children-spc-4 > * {</span> margin: 0 1.18rem 2.36rem; <span class='tag'>}</span>
+
+</code></pre>
 
       <h4 class='mg-b-0'>Children Classes</h4>
+
       <p>
         <em>Define sizing proportions of flex children</em>
       </p>
-      <ul style='list-style: none;'>
-        <code class='pd-a-1'>
-          <li><b>.flx-child-0</b> { flex: 0; }</li>
-          <li><b>.flx-child-0-5</b> { flex: 0.5; }</li>
-          <li><b>.flx-child-1</b> { flex: 1; }</li>
-          <li><b>.flx-child-1-5</b> { flex: 1.5; }</li>
-          <li><b>.flx-child-2</b> { flex: 2; }</li>
-          <li><b>.flx-child-2-5</b> { flex: 2.5; }</li>
-          <li><b>.flx-child-3</b> { flex: 3; }</li>
-          <li><b>.flx-child-3-5</b> { flex: 3.5; }</li>
-          <li><b>.flx-child-4</b> { flex: 4; }</li>
-        </code>
-      </ul>
+
+<pre><code class='pd-a-1'>
+  <span class='tag'>.flx-child-0 {</span> flex: 0; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-0-5 {</span> flex: 0.5; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-1 {</span> flex: 1; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-1-5 {</span> flex: 1.5; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-2 {</span> flex: 2; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-2-5 {</span> flex: 2.5; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-3 {</span> flex: 3; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-3-5 {</span> flex: 3.5; <span class='tag'>}</span>
+  <span class='tag'>.flx-child-4 {</span> flex: 4; <span class='tag'>}</span>
+
+</code></pre>
 
     </section>
 
