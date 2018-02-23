@@ -131,7 +131,7 @@ a:focus { background: #eee; }
 
 /* Default Layout Styling for Semantic Elements */
 article {
-  margin: 1.76rem 0;
+  margin: 3.62rem 0;
   background: #f2f2f2;
 }
 
@@ -269,7 +269,7 @@ pre {
 code {
   display: inline-block;
   padding: 0 4px;
-  margin: 0 0.3rem;
+  /* margin: 0 0.3rem; */
   line-height: 1.3rem;
   font-size: 0.9rem;
   border-radius: 3px; }
@@ -395,7 +395,7 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #222; }
 
 blockquote {
-  background: #eee;
+  background: rgba(0,0,0,0.06);
   border-left: 6px solid #d2d2d2;
   color: #444; }
 
@@ -416,7 +416,7 @@ pre > code .tag {
   background: #eee;
   box-shadow: inset 0 1px 8px rgba(0,0,0,0.08); } */
 
-section p, article p {
+section, article, aside, sidebar {
   color: #3a3a3a; }
 
 /*** Opinionated Button/Link Colours (Comment out if interfering) ***/

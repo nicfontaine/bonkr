@@ -43,11 +43,7 @@
       <h3 id='paragraph'>Paragraph <a href='#paragraph' class='linker' title='anchor to paragraph'>#</a></h3>
 
       <p>
-        Font-sizing is <code>rem</code> based, relative to <code>html { font-size: 17px; line-height: 1.6 }</code>
-      </p>
-      
-      <p>
-        No <code>font-family</code> is chosen, other than <code>sans-serif</code>, for simplicity.
+        Font-sizing is <code>rem</code> based, relative to <code>html { font-size: 17px; line-height: 1.6 }</code>. No <code>font-family</code> is chosen, other than <code>sans-serif</code>, for simplicity &mdash; just copy the <em>Open Sans, Proxima Nova, &amp; Roboto</em> link tags from your other projects...
       </p>
 
     </section>
@@ -145,11 +141,13 @@
     <h3 id='sections'>Sections <a href='#sections' class='linker' title='anchor to buttons'>#</a></h3>
 
     <p>
-      The basics of structure in <b>bonkr</b> are focused on <code>&lt;main&gt;</code> content. 
+      Structural basics in <b>BONKR</b> are focused on <code>&lt;main&gt;</code> content. 
     </p>
 
     <blockquote>
-      <p><code>&lt;nav&gt;</code> is unique to each case &amp; is therefore left alone.</p>
+      <p>
+        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, &amp; <code>&lt;aside&gt;</code>are left alone to avoid "Bootstrapping" your styles. When adding these, you can use the <a href='#flexbox'>flex</a> helper classes below; or just write custom styling.
+      </p>
     </blockquote>
 
     <p>
@@ -159,8 +157,11 @@
 <pre><code><span class='tag'>section {</span>
   margin: 0 auto;
   max-width: 1200px;
-  padding: 1.76rem 2.35rem;
-<span class='tag'>}</span></code></pre>
+  padding: 1.76rem 2.35rem; <span class='tag'>}</span></code></pre>
+
+    <p>
+      You can overwrite with your preferred <code>&lt;max-width&gt;</code>, or use the <a href='#max-width'>max-width</a> helper classes below.
+    </p>
 
     </section>
 
@@ -171,8 +172,28 @@
         <h3 id='articles'>Articles <a href='#articles' class='linker' title='anchor to buttons'>#</a></h3>
 
         <p>
-          An <code>&lt;article&gt;</code> is used to make a bar. A <code>&lt;section&gt;</code> is nested inside of it to &mdash; center, add padding, &amp; set max-width (per above). This is helpful when you want a <code>background-colour</code>, <code>background-image</code>, or <code>width: 100%</code> content.
+          An <code>&lt;article&gt;</code> is used to make a bar like this. You can nest a <code>&lt;section&gt;</code> inside to &mdash; center, add padding, &amp; set max-width (per above). This is helpful when you want a <code>background-colour</code>, <code>background-image</code>, or <code>width: 100%</code> content.
         </p>
+
+<pre class='mg-b-7'><code><span class='tag'>&lt;article&gt;</span>
+  <span class='tag'>&lt;section&gt;</span>
+    <span class='tag'>&lt;p&gt;</span>
+      I am an article
+    <span class='tag'>&lt;/p&gt;</span>
+  <span class='tag'>&lt;/section&gt;</span>
+<span class='tag'>&lt;/article&gt;</span></code></pre>
+
+        <h6 class='text-up'>Why?</h6>
+
+        <blockquote>
+          <p>
+            This is done to avoid unecessary classes on <b>divs</b> like <code>.bar</code> &amp; <code>.inner</code> and such. <b>Yes</b> it's opinionated, and <b>yes</b> it's 3 lines of code you can remove if you so choose.
+          </p>
+        </blockquote>
+
+<pre><code><span class='tag'>article {</span>
+  margin: 3.52rem 0;
+  background: #f2f2f2; <span class='tag'>}</span></code></pre>
 
       </section>
     </article>
