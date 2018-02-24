@@ -9,9 +9,6 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./src/bonkr.css">
-  <style>
-    .title { margin-top: 4.5rem; }
-  </style>
 </head>
 <body>
 
@@ -37,29 +34,74 @@
 
   <main>
 
-    <!--*************** Text *******************-->
+    <section></section>
+
+    <!--*************** Getting Started *******************-->    
+
     <section>
 
-      <h3 id='paragraph'>Paragraph <a href='#paragraph' class='linker' title='anchor to paragraph'>#</a></h3>
+      <h3 id='getting-started'>Getting Started <a href='#getting-started' class='linker' title='anchor to getting started'>#</a></h3>
 
       <p>
-        Font-sizing is <code>rem</code> based, relative to <code>html { font-size: 17px; line-height: 1.6 }</code>. No <code>font-family</code> is chosen, other than <code>sans-serif</code>, for simplicity &mdash; just copy the <em>Open Sans, Proxima Nova, &amp; Roboto</em> link tags from your other projects...
+        <b>1.</b> &nbsp; <a href='https://github.com/ngpfontaine/bonkr' class='btn' target='_blank'>Download on Github</a>
       </p>
+
+<pre><code>bonkr/
+  <span class='tag'>├──</span> index.html
+  <span class='tag'>├──</span> readme.md
+  <span class='tag'>└──</span> src/
+      <span class='tag'>├──</span> bonkr.css
+      <span class='tag'>├──</span> bonkr-dialog.js
+      <span class='tag'>└──</span> bonkr-loader.js
+</code></pre>
+
+      <p class='pd-t-4'>
+        <b>2.</b> &nbsp; Add to your project<br>
+      </p>
+
+<pre><code class='allselect'><span class='tag'>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="./</span>&lt;your-path&gt;<span class='tag'>/bonkr.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;</span>
+    <em>// Content</em>
+    <span class='tag'>&lt;script src="./</span>&lt;your-path&gt;<span class='tag'>/bonkr-dialog.js"&gt;&lt;/script&gt;
+    &lt;script src="./</span>&lt;your-path&gt;<span class='tag'>/bonkr-loader.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</span>
+</code></pre>
 
     </section>
 
     <section></section>
 
+    <!--*************** Text *******************-->
     <section>
 
-      <h3 id='typographic-tags'>Typographic Tags <a href='#typographic-tags' class='linker' title='anchor to typographic tags'>#</a></h3>
+      <h3 id='typography'>Typography <a href='#typography' class='linker' title='anchor to paragraph'>#</a></h3>
 
-      <a href=''>Anchor</a><br>
-      <u>Underline</u><br>
-      <em>Emphasis</em><br>
-      <strong>Strong</strong><br>
-      <b>Bold</b><br>
-      <small>Small</small><br>
+      <p>
+        Font-sizing is <code>rem</code> based, relative to <code>html { font-size: 17px; line-height: 1.6 }</code>. No <code>font-family</code> is chosen, other than <code>sans-serif</code>, for simplicity &mdash; just copy the <em>Open Sans, Proxima Nova, &amp; Roboto</em> link tags from your other projects...
+      </p>
+
+<pre><code><span class='tag'>&lt;p&gt;</span>
+  Font-sizing is <span class='tag'>&lt;code&gt;</span>rem<span class='tag'>&lt;/code&gt;</span> based...
+<span class='tag'>&lt;/p&gt;</span>
+</code></pre>
+
+      <div class='pd-t-8'></div>
+
+      <p>
+        <a href=''>Anchor</a> &nbsp; <code>&lt;a&gt;</code><br>
+        <u>Underline</u> &nbsp; <code>&lt;u&gt;</code><br>
+        <em>Emphasis</em> &nbsp; <code>&lt;em&gt;</code><br>
+        <strong>Strong</strong> &nbsp; <code>&lt;strong&gt;</code><br>
+        <b>Bold</b> &nbsp; <code>&lt;b&gt;</code><br>
+        <small>Small</small> &nbsp; <code>&lt;small&gt;</code><br>
+        Superscript<sup>TM</sup> &nbsp; <code>&lt;sup&gt;</code><br>
+        <cite>Citation</cite> &nbsp; <code>&lt;cite&gt;</code><br>
+        <s>Strikethrough</s> &nbsp; <code>&lt;s&gt;</code><br>
+      </p>
 
     </section>
 
@@ -69,12 +111,28 @@
 
       <h3 id='headings'>Headings <a href='#headings' class='linker' title='anchor to headings'>#</a></h3>
 
-      <h1>H1 <code>3.4rem</code></h1>
-      <h2>H2 <code>2.8rem</code></h2>
-      <h3>H3 <code>2.2rem</code></h3>
-      <h4>H4 <code>1.7rem</code></h4>
-      <h5>H5 <code>1.3rem</code></h5>
-      <h6>H6 <code>1.1rem</code></h6>
+      <p>
+        <em>&mdash; &nbsp;Each section heading on this page is an <code>&lt;h3&gt;</code></em>
+      </p>
+
+      <div class='pd-t-8'></div>
+
+      <h1>Serenity Now!</h1>
+      <h2>I Want To Believe</h2>
+      <h3>Ez Mid</h3>
+      <h4>You, Shall Not Pass..</h4>
+      <h5>Fuck Trump</h5>
+      <h6>Your Bootstrap Site Sucks</h6>
+
+      <div class='pd-t-3'></div>
+
+<pre><code><span class='tag'>&lt;h1&gt;</span> 3.4rem
+<span class='tag'>&lt;h2&gt;</span> 2.8rem
+<span class='tag'>&lt;h3&gt;</span> 2.3rem
+<span class='tag'>&lt;h4&gt;</span> 1.7rem
+<span class='tag'>&lt;h5&gt;</span> 1.3rem
+<span class='tag'>&lt;h6&gt;</span> 1.1rem
+</code></pre>
 
     </section>
 
@@ -82,7 +140,7 @@
 
     <section>
 
-      <h3>Hr</h3>
+      <h3 id='hr'>Hr <a href='#hr' class='linker' title='anchor to horizontal'>#</a></h3>
       
       <hr>
 
@@ -95,18 +153,26 @@
       <h3 id='lists'>Lists <a href='#lists' class='linker' title='anchor to lists'>#</a></h3>
 
       <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <li>waffle</li>
+        <li>bildungsroman</li>
+        <li>forkroot</li>
+        <ul>
+          <li>pinecone</li>
+        </ul>
       </ul>
       
       <ol>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <li>pantaloons</li>
+        <li>numenor</li>
+        <li>pickleback</li>
+        <ul>
+          <li>hopscotch</li>
+        </ul>
       </ol>
 
     </section>
+
+    <section></section>
 
     <section>
 
@@ -115,33 +181,112 @@
       <blockquote class='quote'>
 
         <p>
-          Giving <code>.quote</code> will add this nifty <em>quote</em> on the right.
-        </p>
-
-        <p>
-          Nam ultricies ex ut nunc ultricies, eget porttitor est malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nibh nunc, maximus eu sapien ac, convallis ultricies quam.
+          Adding <code>.quote</code> will add this nifty quote on the right.
         </p>
 
       </blockquote>
 
+<pre><code class='allselect'><span class='tag'>&lt;blockquote class='quote'&gt;</span>
+  <span class='tag'>&lt;p&gt;</span>
+    Adding <span class='tag'>&lt;code&gt;</span>.quote<span class='tag'>&lt;/code&gt;</span> will add this nifty quote on the right.
+  <span class='tag'>&lt;/p&gt;</span>
+<span class='tag'>&lt;/blockquote&gt;</span>
+</code></pre>
+
     </section>
+
+    <section></section>
+
+    <!--*************** TABLES *******************-->
+    <section>  
+      
+      <h3 id='tables'>Tables <a href='#tables' class='linker' title='anchor to tables'>#</a></h3>
+
+      <table class='mg-b-8'>
+        <thead>
+        <tr>
+          <th>Class</th>
+          <th>Subraces</th>
+          <th>Ability Bonus</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Dwarf</td>
+          <td>Hill, Mountain</td>
+          <td>+2 Constitution</td>
+        </tr>
+        <tr>
+          <td>Halfling</td>
+          <td>Lightfoot, Stout</td>
+          <td>+2 Dexterity</td>
+        </tr>
+        <tr>
+          <td>Elf</td>
+          <td>High, Wood, Drow</td>
+          <td>+2 Dexterity</td>
+        </tr>
+        </tbody>
+      </table>
+
+<pre><code class='allselect'><span class='tag'>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;</span>Class<span class='tag'>&lt;/th&gt;
+      &lt;th&gt;</span>Subrace<span class='tag'>&lt;/th&gt;
+      &lt;th&gt;</span>Ability Bonus<span class='tag'>&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;</span>Dwarf<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>Hill, Mountain<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>+2 Constitution<span class='tag'>&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;</span>Halfling<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>Lightfoot, Stout<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>+2 Dexterity<span class='tag'>&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;</span>Elf<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>High, Wood, Drow<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>+2 Dexterity<span class='tag'>&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</span>
+</code></pre>
+
+    </section>
+
+    <section></section>
 
     <section>
 
-      <h3 id='codes'>Codes <a href='#codes' class='linker' title='anchor to codes'>#</a></h3>
+      <h3 id='code'>Code <a href='#code' class='linker' title='anchor to code'>#</a></h3>
       
       <p>
-        <code>&lt;code&gt;</code> Is inline
+        <code><b>I</b> am inline</code> with other text
       </p>
+
+      <pre><code><span class='tag'>&lt;code&gt;</span>I am inline<span class='tag'>&lt;/code&gt;</span> with other text</code></pre>
+
+      <hr>
+
+<pre><code>But <b><em>I</em></b> am a big block of code,
+ooh yea..</code></pre>
 
 <pre><code><span class='tag'>&lt;pre&gt;</span>
   <span class='tag'>&lt;code&gt;</span>
-    // Wrap <strong>code</strong> in <strong>pre</strong> for block
+    But I am a big block of code,
+    ooh yea...
   <span class='tag'>&lt;/code&gt;</span>
 <span class='tag'>&lt;/pre&gt;</span>
 </code></pre>
 
     </section>
+
+    <section></section>
 
     <!--*************** SECTIONS *******************-->    
     <section>
@@ -149,41 +294,48 @@
     <h3 id='sections'>Sections <a href='#sections' class='linker' title='anchor to buttons'>#</a></h3>
 
     <p>
-      Structural basics in <b>BONKR</b> are focused on <code>&lt;main&gt;</code> content. 
-    </p>
-
-    <blockquote>
-      <p>
-        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, &amp; <code>&lt;aside&gt;</code>are left alone to avoid "Bootstrapping" your styles. When adding these, you can use the <a href='#flexbox'>flex</a> helper classes below; or just write custom styling.
-      </p>
-    </blockquote>
-
-    <p>
-      Each section on this page lies within a (you guessed it) <code>&lt;section&gt;</code>, which are <b>centered</b>, with <b>padding</b>, &amp; <b>max-width</b>.
+      Structural basics in <b>BONKR</b> are focused on <code>&lt;main&gt;</code> content. Each section on this page lies within a <em>(you guessed it)</em> <code>&lt;section&gt;</code>, which are <b>centered</b>, with <b>padding</b>, &amp; <b>max width</b>.
     </p>
 
 <pre><code><span class='tag'>section {</span>
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 1.76rem 2.35rem; <span class='tag'>}</span></code></pre>
 
+    <div class='pd-t-4'></div>
+
+    <hr>
+
+    <div class='pd-t-4'></div>
+
+    <blockquote>
+      <p>
+        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, &amp; <code>&lt;aside&gt;</code> are left alone to avoid "Bootstrapping" your styles. When adding these, you can use the <a href='#flexbox'>flex</a> helper classes below for layout; or just write custom styling.
+      </p>
+    </blockquote>
+
     <p>
-      You can overwrite with your preferred <code>&lt;max-width&gt;</code>, or use the <a href='#max-width'>max-width</a> helper classes below.
+      You can <em>obv</em> overwrite the above styling with your preferred <code>max-width</code>, or use the <a href='#max-width'>.max-width</a> helper classes below.
     </p>
 
     </section>
 
+    <section></section>
+
     <!--*************** ARTICLE *******************-->
     <article>
+
+      <section></section>
+
       <section>
 
-        <h3 id='articles'>Articles <a href='#articles' class='linker' title='anchor to buttons'>#</a></h3>
+        <h3 id='article'>Article <a href='#article' class='linker' title='anchor to articles'>#</a></h3>
 
         <p>
-          An <code>&lt;article&gt;</code> is used to make a bar like this. You can nest a <code>&lt;section&gt;</code> inside to &mdash; center, add padding, &amp; set max-width (per above). This is helpful when you want a <code>background-colour</code>, <code>background-image</code>, or <code>width: 100%</code> content.
+          An <code>&lt;article&gt;</code> is used to make a full-width bar like this. This is helpful when you want a <code>background-colour</code>, <code>background-image</code>, or <code>width: 100%</code> content. Since the <code>&lt;section&gt;</code> is a centered container, you can nest one inside to hold your content. 
         </p>
 
-<pre class='mg-b-7'><code><span class='tag'>&lt;article&gt;</span>
+<pre class='mg-b-7'><code class='allselect'><span class='tag'>&lt;article&gt;</span>
   <span class='tag'>&lt;section&gt;</span>
     <span class='tag'>&lt;p&gt;</span>
       I am an article
@@ -191,11 +343,13 @@
   <span class='tag'>&lt;/section&gt;</span>
 <span class='tag'>&lt;/article&gt;</span></code></pre>
 
+        <div class='pd-t-8'></div>
+
         <h6 class='text-up'>Why?</h6>
 
         <blockquote>
           <p>
-            This is done to avoid unecessary classes on <b>divs</b> like <code>.bar</code> &amp; <code>.inner</code> and such. <b>Yes</b> it's opinionated, and <b>yes</b> it's 3 lines of code you can remove if you so choose.
+            This is done to avoid unecessary classes, using <b>divs</b> like <code>.bar</code> &amp; <code>.inner</code> and such. <b>Yes</b> it's opinionated, and <b>yes</b> it's 3 lines of code you can remove if you so choose.
           </p>
         </blockquote>
 
@@ -204,33 +358,55 @@
   background: #f2f2f2; <span class='tag'>}</span></code></pre>
 
       </section>
+
+      <section></section>
+
     </article>
+
+    <section></section>
 
     <!--*************** BUTTONS, LINKS *******************-->
     <section>  
 
       <h3 id='buttons'>Buttons <a href='#buttons' class='linker' title='anchor to buttons'>#</a></h3>
+
+      <p>
+        <b>No</b>, there aren't <code>.filled</code>, <code>.knockout</code>, <code>.ghost</code>, <code>.simple</code> classes in a variety of <em>Material<sup>TM</sup></em> pallettes &mdash; <b>yes</b>, <code>:focus</code>, <code>:hover</code>, <code>:active</code>, <code>:disabled</code>, <code>:focus:hover</code>, &amp; <code>:active:hover</code> are taken care of.
+      </p>
+
+      <p>
+        Buttons have no margin or spacing if they're butt-to-butt, but you can add margin classes or group into a <a href='#flexbox'>flex</a> container for separation.
+      </p>
+
+      <div class='mg-t-8'>
       
-      <button type='button' class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button
-        ><button type='button' class='mg-b-4'>button</button
-        ><button type='button' class='d-block mg-b-4'>button <span class='text-code'>.d-block</span></button
-        ><button type='button' class='d-block rnd-4 mg-b-4'>button <span class='text-code'>.d-block .rnd-4</span></button
-        ><button type='button' class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button>
+        <button type='button' class='mg-b-4'>button</button><button type='button' class='mg-b-4'>button</button> &nbsp; <code>&lt;br&gt;</code><br>
+
+        <button type='button' class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button><button type='button' class='mg-b-4'>button</button>
+
+        <button type='button' class='d-block mg-b-4'>button <span class='text-code'>.d-block</span></button>
+
+        <button type='button' class='d-block rnd-4 mg-b-4'>button <span class='text-code'>.d-block .rnd-4</span></button>
+
+        <button type='button' class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button>
+
         <button type='button' class='w-full mg-b-4'>button <span class='text-code'>.w-full</span></button>
 
-    </section>
+      </div>
 
-    <section>
+      <hr>
 
-      <h3>Anchor with .btn class</h3>
+      <p>
+        Helper class <code>.btn</code> actually has all of the same styles as <code>&lt;button&gt;</code>, if you'd like to style a link.
+      </p>
 
       <a href='' class='btn mg-b-4'>a <span class='text-code'>.btn</span></a>
 
-    </section>
+      <hr>
 
-    <section>
-
-      <h3>Disabled</h3>
+      <p>
+        Similarly, <code>:disabled</code> and <code>.disabled</code> function the same way.
+      </p>
 
       <button type='button' class='d-block mg-b-4' disabled>button <span class='text-code'>:disabled</span></button
       ><a class='btn mg-b-4 disabled'>a <span class='text-code'>.btn .disabled</span></a
@@ -238,21 +414,23 @@
 
     </section>
 
-    <!--*************** MODAL *******************-->
+    <section></section>
+
+    <!--*************** DIALOG MODAL *******************-->
     <section>  
       
       <h3 id='dialogs'>Dialog Modal <a href='#dialogs' class='linker' title='anchor to dialogs'>#</a></h3>
 
       <p>
-        Each button below has <code>dialog-btn-open</code> class and a <code>data-dialog-id</code> attribute that corresponds to a dialog modal's <code>#dialog-&lt;id&gt;</code>.
+        Each button below has <code>dialog-btn-open</code> class and a <code>data-dialog-id</code> attribute that corresponds to a dialog modal's unique <code>#dialog-&lt;&lt;id&gt;&gt;</code>
       </p>
         
       <p>
         <button type='button' class='dialog-btn-open mg-b-4 mg-r-2' data-dialog-id='0'>
-          Dialog 01
+          Open Dialog 1
         </button>
         <button type='button' class='dialog-btn-open' data-dialog-id='foo'>
-          Dialog 02
+          Open Dialog 2
         </button>
       </p>
 
@@ -260,24 +438,65 @@
         Basic setup would be:
       </p>
 
-<pre><code><span class='tag'>&lt;button class='dialog-btn-open' data-dialog-id='0'&gt;</span>Button Will Open Dialog<span class='tag'>&lt;button&gt;</span>
+<pre><code class='allselect'><span class='tag'>&lt;button class='dialog-btn-open' data-dialog-id='hello'&gt;</span>Open Dialog!<span class='tag'>&lt;button&gt;</span>
 
-<span class='tag'>&lt;div class='dialog' id='dialog-0&gt;</span>
+<span class='tag'>&lt;div class='dialog' id='dialog-hello&gt;</span>
   <span class='tag'>&lt;div class='dialog-outer'&gt;</span> // Overlay to cover content &amp; close via click
-    <span class='tag'>&lt;div class='dialog-inner'&gt;</span> // Display dialog content
-      <span class='tag'>&lt;button class='dialog-btn-close'&gt;</span>X to Close Dialog<span class='tag'>&lt;/button&gt;</span>
-      // Content..
+    <span class='tag'>&lt;div class='dialog-inner'&gt;</span> // Container for dialog content
+      <span class='tag'>&lt;button class='dialog-btn-close'&gt;</span>Close Dialog<span class='tag'>&lt;/button&gt;</span>
+      Why hello there, I am a dialog...
     <span class='tag'>&lt;/div&gt;</span>
   <span class='tag'>&lt;/div&gt;</span>
 <span class='tag'>&lt;/div&gt;</span>
 </code></pre>
+  
+      <div class='pd-t-4'></div>
+
+      <hr>
+
+      <div class='pd-t-4'></div>
+
+      <h6>Usability Notes</h6>
+
+      <p>
+        <ul>
+          <li>The <b>open</b> button adds a <code>keydown</code> listener that will close the dialog on <code>ESC</code></li>
+          <li>This will also remove the listener (so <code>ESC</code> doesn't hide every dialog)</li>
+          <li>The <b>close</b> button and <b>overlay-div</b> function the same way</li>
+          <li><em>On dialog open</em> - focus is given to the <b>close</b> button</li>
+          <li><em>On dialog close</em> - focus is given back to the <b>open</b> button</li>
+        </ul>
+      </p>
 
     </section>
+
+    <section></section>
+
+    <!--*************** LOADER *******************-->
+    <section>
+
+      <h3 id='loader'>Loader <a href='#loader' class='linker' title='anchor to loader'>#</a></h3>
+
+      <p>
+        The small script <code>bonkr-loader.js</code> looks for an element with <code>#bonkr-loader</code> if it exists. <b>Onload</b>, its <code>show</code> class will be removed and it will be hidden. Class <code>loader</code> will style it as a fullscreen overlay.
+      </p>
+
+      <p class='pd-b-8'>
+        <button onclick="location.reload()">Reload to See</button>
+      </p>
+
+<pre><code><span class='tag'>&lt;div id='bonkr-loader' class='loader show'&gt;</span>
+  Loader content
+<span class='tag'>&lt;/div&gt;</span></code></pre>
+
+    </section>
+
+    <section></section>
 
     <!--*************** FORM, INPUTS *******************-->
     <section>  
 
-      <h3 id='form'>Form <a href='#form' class='linker' title='anchor to formd'>#</a></h3>
+      <h3 id='form'>Form <a href='#form' class='linker' title='anchor to form'>#</a></h3>
       
       <form>
       <label class='d-block text-center mg-b-3'>label <span class='text-code'>.d-block .text-center</span></label>
@@ -304,6 +523,8 @@
 
     </section>
 
+    <section></section>
+
     <!--*************** LAYOUT *******************-->
     <section>  
       
@@ -314,6 +535,8 @@
       </p>
 
     </section>
+
+    <section></section>
 
     <!--*************** GRID *******************-->
     <section>  
@@ -326,44 +549,7 @@
 
     </section>
 
-    <!--*************** TABLES *******************-->
-    <section>  
-      
-      <h3 id='tables'>Tables <a href='#tables' class='linker' title='anchor to tables'>#</a></h3>
-
-      <table class='w-full'>
-        <thead>
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        </tbody>
-      </table>
-
-    </section>
+    <section></section>
 
     <!--*************** PADDING *******************-->
     <section>  
@@ -433,7 +619,7 @@
     <!--*************** FLEXBOX *******************-->
     <section>  
       
-      <h3>Flexbox</h3>
+      <h3 id='flexbox'>Flexbox <a href='#flexbox' class='linker' title='anchor to flexbox'>#</a></h3>
       
       <h4 class=''>Examples</h4>
 
@@ -534,20 +720,15 @@
       <h3>To-Do</h3>
       
       <ul>
-        <li>Give everything a default em margin &amp; padding styling</li>
-        <li>Semantic structure guide, with default spacing values</li>
-        <li>em based margin &amp; padding system</li>
-        <li>Lock TAB &amp; SHIFT + TAB into dialog when open</li>
-        <li>.mode-dark for body</li>
+        <li>Intro, links, logo</li>
+        <li>Dialog - lock TAB &amp; SHIFT + TAB into dialog when open</li>
+        <li>Dark mode class for body</li>
         <li>Grid system, w/ breakpoints(?)</li>
         <li>+ Buttons - knockout, ghost, circle, etc.</li>
-        <li>Card, figure, image types</li>
-        <li>Header, footer, sidebar, fieldset, figure</li>
+        <li>Card class, image types</li>
+        <li>Fieldset, figure, video</li>
         <li>Tooltips</li>
         <li>sub, cite, etc.</li>
-        <li>.card</li>
-        <li>.page, .bar, &amp; .inner(?) classes for section</li>
-        <li>Correlate dialogs by class, class (and events) for close btn(s)</li>
         <li>Dialog stylinig types &mdash; center, top-center, TR, TL, etc.</li>
       </ul>
 
@@ -558,16 +739,16 @@
   <!--************************************************************-->
 
   <!-- Loader -->
-  <div id='loader' class='loader show pos-fixed pos-all-0'>
-    <div class='pos-abs-center text-center'>loader</div>
+  <div id='bonkr-loader' class='loader show'>
+    <div class='pos-abs-center text-center'>BONKR</div>
   </div>
 
-  <!-- Dialog 01 -->
+  <!-- Dialog 1 -->
   <div class='dialog' id='dialog-0' role='dialog'>
     <div class='dialog-outer'>
       <div class='dialog-inner pd-a-4 w-mx-600'>
         <header role='banner'>
-          <h3>Dialog 01</h3>
+          <h3>Dialog 1</h3>
           <button aria-label='close dialog' class='dialog-btn-close' type='button'>X</button>
         </header>
         <div>
@@ -585,12 +766,12 @@
     </div>
   </div>
 
-  <!-- Dialog 02 -->
+  <!-- Dialog 2 -->
   <div class='dialog center' id='dialog-foo' role='dialog'>
     <div class='dialog-outer'>
       <div class='dialog-inner pd-a-4 w-mx-600'>
         <header role='banner'>
-          <h3>Dialog 02</h3>
+          <h3>Dialog 2</h3>
           <button aria-label='close dialog' class='dialog-btn-close' type='button'>X</button>
         </header>
         <div>
