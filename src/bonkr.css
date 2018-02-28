@@ -746,6 +746,17 @@ body.dialog-active {
   h4 { font-size: 1.7rem; }
   h5 { font-size: 1.2rem; }
   h6 { font-size: 1rem; }
+
+  section {
+  padding: 1rem; }
+
+  article {
+    margin: 1.5rem 0; }
+
+  .linker {
+    transform: none;
+    left: initial;
+    right: 0; }
 }
 
 /*** < 480px ***/
@@ -756,4 +767,8 @@ body.dialog-active {
   h4 { font-size: 1.2rem; }
   h5 { font-size: 0.9rem; }
   h6 { font-size: 0.8rem; }
+
+  section {
+  padding: 0.5rem; }
+
 }
