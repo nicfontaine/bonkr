@@ -43,7 +43,13 @@
       <h3 id='getting-started'>Getting Started <a href='#getting-started' class='linker' title='anchor to getting started'>#</a></h3>
 
       <p>
-        <b>1.</b> &nbsp; <a href='https://github.com/ngpfontaine/bonkr' class='btn' target='_blank'>Download on Github</a>
+        <b>1.</b> Get The Code
+      </p>
+
+      <p>
+        <div class='d-flx flx-w flx-spc-2 flx-children-spc-2 flx-children-s-0'>
+          <a href='https://github.com/ngpfontaine/bonkr' class='btn' target='_blank' title='github download'>Download on Github</a><a href='https://jsfiddle.net/ngpfontaine/jp0z0ago/' class='btn' target='_blank' title='test on jsfiddle'>Test on JSFiddle</a>
+        </div>
       </p>
 
 <pre><code>bonkr/
@@ -623,13 +629,13 @@ ooh yea..</code></pre>
       
       <h4 class=''>Examples</h4>
 
-      <i>flex, row, shrink 0, wrap, spacing 10</i>
+      <i>flex, row, wrap, shrink 0, margin -2rem, spacing 2rem</i>
 
       <p>
-        <code>.d-flx .flx-row .flx-wr-w .flx-children-s-0 .flx-children-spc-2 </code>
+        <code>.d-flx .flx-row .flx-wr-w .flx-children-s-0 .flx-spc-2 .flx-children-spc-2 </code>
       </p>
       
-      <div class='d-flx flx-row flx-wr-w flx-children-s-0 flx-children-spc-2 flx-spc-2 mg-b-6'>
+      <div class='d-flx flx-row flx-wr-w flx-children-s-0 flx-spc-2 flx-children-spc-2 mg-b-6'>
         <button type='button'>flex child</button
         ><button type='button'>flex child</button
         ><button type='button'>flex child</button
@@ -640,13 +646,13 @@ ooh yea..</code></pre>
         >
       </div>
       
-      <i>flex, row, nowrap, shrink 1, spacing 5</i>
+      <i>flex, row, nowrap, shrink 1, spacing 1rem</i>
 
       <p>
         <code>.d-flx .flx-row .flx-wr-n .flx-children-s-1 .flx-children-spc-1 </code>
       </p>
       
-      <div class='mg-b-5 d-flx flx-row flx-wr-n flx-children-s-1 flx-children-spc-1'>
+      <div class='mg-b-5 d-flx flx-row flx-wr-n flx-spc-1 flx-children-s-1 flx-children-spc-1'>
         <button type='button'>flex child</button
         ><button type='button'>flex child</button
         ><button type='button'>flex child</button
@@ -730,6 +736,7 @@ ooh yea..</code></pre>
         <li>Tooltips</li>
         <li>sub, cite, etc.</li>
         <li>Dialog stylinig types &mdash; center, top-center, TR, TL, etc.</li>
+        <li>Probably combine flx-spc- &amp; flx-spc-children-</li>
       </ul>
 
     </section>
