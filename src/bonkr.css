@@ -652,10 +652,10 @@ code.d-block { margin-right: 0; margin-left: 0; }
 .flx-children-spc-2 > * { margin: 0 0.59rem 1.18rem; }
 .flx-children-spc-3 > * { margin: 0 0.88rem 1.76rem; }
 .flx-children-spc-4 > * { margin: 0 1.18rem 2.36rem; }*/
-.flx-children-spc-1 > * { margin-left: 0.3rem; margin-right: 0.3rem; }
-.flx-children-spc-2 > * { margin-left: 0.59rem; margin-right: 0.59rem; }
-.flx-children-spc-3 > * { margin-left: 0.88rem; margin-right: 0.88rem; }
-.flx-children-spc-4 > * { margin-left: 1.18rem; margin-right: 1.18rem; }
+.flx-children-spc-1 > * { margin-left: 0.3rem; margin-right: 0.3rem; margin-bottom: 0.6rem; }
+.flx-children-spc-2 > * { margin-left: 0.59rem; margin-right: 0.59rem; margin-bottom: 1.18rem; }
+.flx-children-spc-3 > * { margin-left: 0.88rem; margin-right: 0.88rem; margin-bottom: 1.76rem; }
+.flx-children-spc-4 > * { margin-left: 1.18rem; margin-right: 1.18rem; margin-bottom: 2.36rem; }
 
 /* For Children */
 .flx-child-0 { flex: 0; }
