@@ -9,35 +9,48 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./src/bonkr.css">
+  <style>
+    section {
+      padding: 4rem 2.35rem;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- <header>
-
-    <nav role='navigation' class='w-mx-1200 mg-0-auto pd-a-8 pd-t-4 pd-b-4'>
-      <ul class='d-flx flx-row flx-wr-w just-bt text-center pd-ch-1'>
-        <li><a href='#text'>Text</a></li>
-        <li><a href='#buttons'>Buttons</a></li>
-        <li><a href='#modals'>Modal</a></li>
-        <li><a href='#forms'>Forms</a></li>
-        <li><a href='#layout'>Layout</a></li>
-        <li><a href='#grid'>Grid</a></li>
-        <li><a href='#tables'>Tables</a></li>
-        <li><a href='#padding'>Padding</a></li>
-        <li><a href='#margin'>Margin</a></li>
-        <li><a href='#flexbox'>Flexbox</a></li>
-        <li><a href='#todo'>To-Do</a></li>
-      </ul>
-    </nav>
-  
-  </header> -->
+  <header class='pd-a-4' style=''>
+    <section class='w-mx-1100 pd-t-0 pd-b-0 mg-0-auto'>
+    <a class='btn' target='_blank' href='https://nicfontaine.com' title='created by nicfontaine.com'>nicfontaine.com</a>
+    <div class='flt-r d-flx flx-spc-3 flx-children-spc-3'>
+      <a target='_blank' href='https://github.com/ngpfontaine/bonkr' title='the code on github'>The Code &rarr;</a>
+      <a href='https://jsfiddle.net/ngpfontaine/jp0z0ago/' target='_blank'>Try on JSFiddle &rarr;</a>
+    </div>
+  </section>
+  </header>
 
   <main>
 
-    <section></section>
+    <section>
+      <a class='d-table mg-0-auto' href='./img/bonkr-logo.png' target='_blank'><img class='mg-0-auto mg-b-5 w-mx-250' src='./img/bonkr-logo.png' alt='bonkr logo. stupid looking face thing'></a>
+      <h1 class='text-center mg-b-0'>BONKR</h1>
+
+      <p class='text-center'>
+        <strong>B</strong>oilerplate - <strong>O</strong>pinionated <em>(kinda)</em>, <strong>N</strong>a<strong>K</strong>ed, &amp; <strong>R</strong>esponsive
+      </p>
+
+      <blockquote class='mg-t-8'>
+
+      <p>
+        Bonkr is a normalized CSS boilerplate with a focus on <strong>style-agnostic</strong> usability, a simple <strong>layout system</strong>, and <strong>responsive flexibility</strong>. It's created as a starter-template with default component proportions &amp; weight and some basic styling that won't conflict with yours, + some nice (and independant) features like <a href='#dialogs'>dialogs</a> and a <a href='#loader'>loader</a>.
+      </p>
+
+      <p>
+        You won't find any <strong>colours</strong>, <strong>web-fonts</strong>, or <strong>navigation</strong> here &mdash; just a beautiful blank-slate for your content.
+      </p>
+      </blockquote>
+
+    </section>
 
     <!--*************** Getting Started *******************-->    
-
     <section>
 
       <h3 id='getting-started'>Getting Started <a href='#getting-started' class='linker' title='anchor to getting started'>#</a></h3>
@@ -79,8 +92,6 @@
 
     </section>
 
-    <section></section>
-
     <!--*************** Text *******************-->
     <section>
 
@@ -111,15 +122,15 @@
 
     </section>
 
-    <section></section>
-
     <section>
 
       <h3 id='headings'>Headings <a href='#headings' class='linker' title='anchor to headings'>#</a></h3>
 
+      <blockquote>
       <p>
-        <em>&mdash; &nbsp;Each section heading on this page is an <code>&lt;h3&gt;</code></em>
+        <em><strong>Note</strong> &mdash; &nbsp;Each section heading on this page is an <code>&lt;h3&gt;</code></em>
       </p>
+    </blockquote>
 
       <div class='pd-t-8'></div>
 
@@ -142,8 +153,6 @@
 
     </section>
 
-    <section></section>
-
     <section>
 
       <h3 id='hr'>Hr <a href='#hr' class='linker' title='anchor to horizontal'>#</a></h3>
@@ -151,8 +160,6 @@
       <hr>
 
     </section>
-
-    <section></section>
 
     <section>
 
@@ -178,8 +185,6 @@
 
     </section>
 
-    <section></section>
-
     <section>
 
       <h3 id='blockquote'>Blockquote <a href='#blockquote' class='linker' title='anchor to blockquote'>#</a></h3>
@@ -187,21 +192,19 @@
       <blockquote class='quote'>
 
         <p>
-          Adding <code>.quote</code> will add this nifty quote on the right.
+          I am a <strong>blockquote</strong>, and adding <code>.quote</code> will display this nifty quote on the right.
         </p>
 
       </blockquote>
 
 <pre><code class='allselect'><span class='tag'>&lt;blockquote class='quote'&gt;</span>
   <span class='tag'>&lt;p&gt;</span>
-    Adding <span class='tag'>&lt;code&gt;</span>.quote<span class='tag'>&lt;/code&gt;</span> will add this nifty quote on the right.
+    I am a <span class='tag'>&lt;strong&gt;</span>blockquote<span class='tag'>&lt;/strong&gt;</span>, and adding <span class='tag'>&lt;code&gt;</span>.quote<span class='tag'>&lt;/code&gt;</span> will display this nifty quote on the right.
   <span class='tag'>&lt;/p&gt;</span>
 <span class='tag'>&lt;/blockquote&gt;</span>
 </code></pre>
 
     </section>
-
-    <section></section>
 
     <!--*************** TABLES *******************-->
     <section>  
@@ -265,8 +268,6 @@
 
     </section>
 
-    <section></section>
-
     <section>
 
       <h3 id='code'>Code <a href='#code' class='linker' title='anchor to code'>#</a></h3>
@@ -291,8 +292,6 @@ ooh yea..</code></pre>
 </code></pre>
 
     </section>
-
-    <section></section>
 
     <!--*************** SECTIONS *******************-->    
     <section>
@@ -321,17 +320,14 @@ ooh yea..</code></pre>
     </blockquote>
 
     <p>
-      You can <em>obv</em> overwrite the above styling with your preferred <code>max-width</code>, or use the <a href='#max-width'>.max-width</a> helper classes below.
+      You can <em>obv</em> overwrite the above styling with your preferred <code>max-width</code>, or use the <a href='#max-width'>.w-mx-#</a> helper classes below.
     </p>
 
     </section>
 
-    <section></section>
-
     <!--*************** ARTICLE *******************-->
     <article>
 
-      <section></section>
 
       <section>
 
@@ -365,11 +361,7 @@ ooh yea..</code></pre>
 
       </section>
 
-      <section></section>
-
     </article>
-
-    <section></section>
 
     <!--*************** BUTTONS, LINKS *******************-->
     <section>  
@@ -419,8 +411,6 @@ ooh yea..</code></pre>
       >
 
     </section>
-
-    <section></section>
 
     <!--*************** DIALOG MODAL *******************-->
     <section>  
@@ -476,7 +466,6 @@ ooh yea..</code></pre>
 
     </section>
 
-    <section></section>
 
     <!--*************** LOADER *******************-->
     <section>
@@ -497,8 +486,6 @@ ooh yea..</code></pre>
 
     </section>
 
-    <section></section>
-
     <!--*************** FORM, INPUTS *******************-->
     <section>  
 
@@ -514,7 +501,7 @@ ooh yea..</code></pre>
         <input type='tel' placeholder='000-000-0000'>
         <input type='password' placeholder='********'>
         <div class='d-flx flx-row flx-children-1 flx-children-spc-1 flx-spc-1'>
-          <select type='select'>
+          <select>
             <option value='one'>One</option>
             <option value='two'>Two</option>
             <option value='three'>Three</option>
@@ -529,8 +516,6 @@ ooh yea..</code></pre>
 
     </section>
 
-    <section></section>
-
     <!--*************** LAYOUT *******************-->
     <section>  
       
@@ -541,8 +526,6 @@ ooh yea..</code></pre>
       </p>
 
     </section>
-
-    <section></section>
 
     <!--*************** GRID *******************-->
     <section>  
@@ -555,7 +538,6 @@ ooh yea..</code></pre>
 
     </section>
 
-    <section></section>
 
     <!--*************** PADDING *******************-->
     <section>  
