@@ -1,4 +1,4 @@
-![bonkr](./img/bonkr-logo.png)   
+![bonkr](./img/bonkr-logo-330x.png)   
 
 # BONKR
 > **B**oilerplate - **O**pinionated _(kinda)_ **N**a**K**ed &amp; **R**esponsive   
