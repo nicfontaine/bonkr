@@ -150,9 +150,7 @@ p:last-child {
 
 blockquote {
   padding: 0.95rem;
-  margin-bottom: 2rem;
-  /*margin-left: 0.88rem;*/
-  margin-left: 0;
+  margin: 0 0 2rem;
   position: relative;
   padding-right: 2.94rem; }
 
