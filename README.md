@@ -3,7 +3,7 @@
 # BONKR
 > **B**oilerplate - **O**pinionated _(kinda)_ **N**a**K**ed &amp; **R**esponsive   
 
-### What's Up
+## What's Up
 
 Bonkr is a normalized CSS boilerplate with a focus on **style-agnostic** usability, a simple **layout system**, and **responsive flexibility**.   
 
@@ -11,7 +11,7 @@ It's created as a starter-template with default component proportions & weight a
 
 You won't find any **colours**, **embedded fonts**, or **navigation** here - just a beautiful blank-slate for your content.
 
-### Table of Contents
+## Table of Contents
 - [Getting Started](https://nicfontaine.com/dev/bonkr#getting-started)
 - [Typography](https://nicfontaine.com/dev/bonkr#typography)
 - [Headings](https://nicfontaine.com/dev/bonkr#headings)
@@ -32,9 +32,9 @@ You won't find any **colours**, **embedded fonts**, or **navigation** here - jus
 - [Margin](https://nicfontaine.com/dev/bonkr#margin)
 - [Flexbox](https://nicfontaine.com/dev/bonkr#flexbox)
 
-### More
+## More
 website: [nicfontaine.com](https://nicfontaine.com)  
 twitter: [@ngpfontaine](https://twitter.com/ngpfontaine)
 
-### License
+## License
 Use it, break it, complain, wtvr.
