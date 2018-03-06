@@ -1,7 +1,7 @@
-![bonkr](./img/bonkr-logo.png)   
+![bonkr](./img/bonkr-logo-330x.png)   
 
 # BONKR
-> _Acronym_: **B**oilerplate - **O**pinionated _(kinda)_ **N**a**K**ed &amp; **R**esponsive   
+> **B**oilerplate - **O**pinionated _(kinda)_ **N**a**K**ed &amp; **R**esponsive   
 
 ### What's Up
 
