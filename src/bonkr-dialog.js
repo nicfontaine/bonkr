@@ -147,9 +147,10 @@ if (domDialog.dialog.modal.length > 0) {
           e.stopPropagation()
         })
         inner.addEventListener('touchstart', function(e) {
-          e.preventDefault()
+          // e.preventDefault()
           e.stopPropagation()
-        },{passive:false})
+        // },{passive:false})
+        })
       }
 
     } else {
