@@ -132,7 +132,7 @@ a:focus { background: #eee; }
 /* Default Layout Styling for Semantic Elements */
 article {
   margin: 2.5rem 0;
-  background: #f2f2f2;
+  background: rgba(0,0,0,0.063);
 }
 
 section {
@@ -318,10 +318,10 @@ button, .btn, input[type='submit'] {
 
 /*** BW Styling ***/
 h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline {
-  border-bottom: 2px solid #efefef; }
+  border-bottom: 2px solid rgba(0,0,0,0.05); }
 
 hr {
-  background: #efefef; }
+  background: rgba(0,0,0,0.06); }
 
 ::selection { background: rgba(0,0,0,0.15); }
 ::-moz-selection { background: rgba(0,0,0,0.15); }
