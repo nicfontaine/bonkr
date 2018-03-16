@@ -3,7 +3,7 @@ const loader = {
   offset: 500,
   kill: function() {
     setTimeout(function() {
-      loader.cont.classList.remove('show')
+      loader.cont.classList.add('hide')
       window.removeEventListener('load', loader.kill)
     },loader.offset)
   }

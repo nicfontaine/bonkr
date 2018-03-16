@@ -81,15 +81,16 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
   z-index: 500;
   background: #fff;
   pointer-events: none;
-  opacity: 0;
-  transition: all 0.3s;
+  opacity: 1;
   position: fixed;
   overflow: hidden;
   top: 0; right: 0; bottom: 0; left: 0;
+  transition: none;
 }
 
-.loader.show {
-  opacity: 1;
+.loader.hide {
+  transition: all 0.3s;
+  opacity: 0;
   pointer-events: auto; }
 
 .linker {
