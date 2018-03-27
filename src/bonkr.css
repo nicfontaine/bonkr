@@ -91,7 +91,7 @@ h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underli
 .loader.hide {
   transition: all 0.3s;
   opacity: 0;
-  pointer-events: auto; }
+  /* pointer-events: auto; */ }
 
 .linker {
   position: absolute;
@@ -189,6 +189,39 @@ iframe { border: none; }
 figure.frame {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+/*** Tooltip ***/
+
+.ttip {
+  position: relative;
+  display: inline-block;
+}
+
+.ttip-text {
+  position: absolute;
+  display: table;
+  pointer-events: none;
+  background: rgba(0,0,0,0.8);
+  color: #ddd;
+  font-style: italic;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  padding: 0 6px;
+  z-index: 200;
+  opacity: 0; }
+
+.ttip:hover .ttip-text {
+  opacity: 1; }
+
+.ttip.t .ttip-text { top: -0.5rem; transform: translate(0,-100%); right: 0; left: 0; margin: 0 auto; }
+.ttip.r .ttip-text { right: -0.5rem; transform: translate(100%,-100%); }
+.ttip.b .ttip-text { bottom: -0.5rem; transform: translate(0,100%); right: 0; left: 0; margin: 0 auto; }
+.ttip.l .ttip-text { left: -0.5rem; transform: translate(-100%,-100%); }
+
+.ttip.tr .ttip-text { top: -0.5rem; right: 0; transform: translate(0%,-100%); }
+.ttip.br .ttip-text { bottom: -0.5rem; right: 0; transform: translate(0%,100%); }
+.ttip.bl .ttip-text { bottom: -0.5rem; left: 0; transform: translate(0%,100%); }
+.ttip.tl .ttip-text { top: -0.5rem; left: 0; transform: translate(0%,-100%); }
 
 /*** Tables ***/
 
