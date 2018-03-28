@@ -213,15 +213,15 @@ figure.frame {
 .ttip:hover .ttip-text {
   opacity: 1; }
 
-.ttip.t .ttip-text { top: -0.5rem; transform: translate(0,-100%); right: 0; left: 0; margin: 0 auto; }
-.ttip.r .ttip-text { right: -0.5rem; transform: translate(100%,-100%); }
-.ttip.b .ttip-text { bottom: -0.5rem; transform: translate(0,100%); right: 0; left: 0; margin: 0 auto; }
-.ttip.l .ttip-text { left: -0.5rem; transform: translate(-100%,-100%); }
+.ttip.t .ttip-text { top: 0; transform: translate(0,-100%); right: 0; left: 0; margin: 0 auto; }
+.ttip.r .ttip-text { right: -0.3rem; transform: translate(100%,-100%); }
+.ttip.b .ttip-text { bottom: 0; transform: translate(0,100%); right: 0; left: 0; margin: 0 auto; }
+.ttip.l .ttip-text { left: -0.3rem; transform: translate(-100%,-100%); }
 
-.ttip.tr .ttip-text { top: -0.5rem; right: 0; transform: translate(0%,-100%); }
-.ttip.br .ttip-text { bottom: -0.5rem; right: 0; transform: translate(0%,100%); }
-.ttip.bl .ttip-text { bottom: -0.5rem; left: 0; transform: translate(0%,100%); }
-.ttip.tl .ttip-text { top: -0.5rem; left: 0; transform: translate(0%,-100%); }
+.ttip.tr .ttip-text { top: 0; right: 0; transform: translate(0%,-100%); }
+.ttip.br .ttip-text { bottom: 0; right: 0; transform: translate(0%,100%); }
+.ttip.bl .ttip-text { bottom: 0; left: 0; transform: translate(0%,100%); }
+.ttip.tl .ttip-text { top: 0; left: 0; transform: translate(0%,-100%); }
 
 /*** Tables ***/
 
