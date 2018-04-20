@@ -128,7 +128,7 @@ a, a:active, a:visited, a:hover { color: inherit;  }
   z-index: -1;
 } */
 
-a:focus { background: #eee; }
+a:focus { outline: 2px solid rgba(0,0,0,0.4); text-decoration: none;}
 
 /* Default Layout Styling for Semantic Elements */
 article {
@@ -268,7 +268,7 @@ input[type='email'], input[type='number'], input[type='password'], input[type='s
   border: none;
   font-family: inherit;
   border-bottom: 3px solid;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   margin-bottom: 0.6rem;
   padding: .58rem; }
 
@@ -317,19 +317,29 @@ pre > code {
   font-weight: bold; }
 
 button, .btn, input[type='submit'] {
-  /* display: inline-block; */
   cursor: pointer;
-  line-height: 1em;
-  border-width: 2px;
-  /* border-width: 1px; */
-  border-style: solid;
-  font-size: 1em;
+  line-height: 1rem;
+  font-size: 1rem;
   padding: .47rem .95rem;
   color: inherit;
   font-family: inherit;
+  border: none;
   font-weight: bold; }
 
-/* (NOTE) May conflict w/ links or buttons, not sure yet */
+/* Begin Basic Button Styling */
+button, .btn, input[type='submit'] {
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.04); }
+button:focus, .btn:focus, input[type='submit']:focus, button:hover, .btn:hover, input[type='submit']:hover {
+  border: 1px solid rgba(0,0,0,0.6); }
+button:disabled, a.disabled, input[type='submit']:disabled, button:hover:disabled, a.disabled:hover, input[type='submit']:hover:disabled, button:active:disabled, a.disabled:active, input[type='submit']:active:disabled {
+  border: none;
+  cursor: not-allowed; }
+a.btn {
+  outline: none;
+}
+/* End Basic Button Styling */
+
 .btn, .btn:hover, .btn:focus { text-decoration: none; display: inline-block; }
 
 ::-webkit-input-placeholder {
@@ -369,59 +379,22 @@ a.linker:hover { color: rgba(0,0,0,0.1); }
 a.linker:before { display: none; } /* turn off :before underline;
 /*(NOTE) Add :before to linker w/ paragraph symbol */
 
-/* Buttons & Link Buttons */
-button, .btn, input[type='submit'] {
-  background: linear-gradient(#f2f2f2,#e7e7e7);
-  border-color: #d5d5d5; }
-/* Focus */
-button:focus, .btn:focus, input[type='submit']:focus {
-  border-color: #717171;
-  background: linear-gradient(#eee,#dcdcdc);
-  box-shadow: 0 2px 2px rgba(0,0,0,0.1); }
-/* Focus + Hover will be given Focus outline, once Active is off */
-button:focus:hover, .btn:focus:hover, input[type='submit']:focus:hover {
-  border-color: #7c7c7c;
-  background: linear-gradient(#f2f2f2,#e7e7e7);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
-/* Hover */
-button:hover, .btn:hover, input[type='submit']:hover {
-  background: linear-gradient(#f9f9f9,#eee);
-  border-color: #c6c6c6;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
-/* Active, & Active + Hover will retain flat styling */
-button:active, .btn:active, input[type='submit']:active, button:active:hover, .btn:active:hover, input[type='submit']:active:hover {
-  box-shadow: none;
-  border-color: #999;
-  background: linear-gradient(#f2f2f2,#e7e7e7); }
-/* Disabled */
-button:disabled, a.disabled, input[type='submit']:disabled, button:hover:disabled, a.disabled:hover, input[type='submit']:hover:disabled, button:active:disabled, a.disabled:active, input[type='submit']:active:disabled {
-  background: #ccc;
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 15px, rgba(255,255,255,.2) 15px, rgba(255,255,255,.2) 30px);
-  box-shadow: none;
-  border-color: #ccc;
-  color: #777;
-  font-weight: normal;
-  /*cursor: not-allowed;*/
-  pointer-events: none; }
-
 /*** Form Inputs ***/
 input[type='checkbox']:focus, input[type='radio']:focus {
   box-shadow: 0 0 3px rgba(0,0,0,0.6); } 
 
 input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], textarea, select, option {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-color: #ddd; }
 
 input[type='email']:hover, input[type='number']:hover, input[type='password']:hover, input[type='search']:hover, input[type='tel']:hover, input[type='text']:hover, input[type='url']:hover, textarea:hover, select:hover, option:hover {  
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   border-color: #c8c8c8; }
 
 input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus, option:focus {
-  background-color: #e6e6e6;
-  border-bottom: 3px solid #aaa;
-  border-color: #eee;
-  background: #fafafa;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.4); }
+  background-color: #f0f0f0;
+  border-color: #aaa;
+}
 
 /*** Opinionated Text Colours (Comment out if interfering) ***/
 body, h1, h2, h3, h4, h5, h6 {
@@ -451,8 +424,6 @@ pre > code .tag {
 
 section, article, aside, sidebar {
   color: #3a3a3a; }
-
-/*** Opinionated Button/Link Colours (Comment out if interfering) ***/
 
 /*** Text Styles ***/
 .text-left { text-align: left; }

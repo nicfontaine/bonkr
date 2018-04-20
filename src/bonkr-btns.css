@@ -1,0 +1,43 @@
+button, .btn, input[type='submit'] {
+  border-width: 2px;
+  border-style: solid; }
+
+/* Buttons & Link Buttons */
+button, .btn, input[type='submit'] {
+  background: linear-gradient(#f2f2f2,#e7e7e7);
+  border-color: #d5d5d5; }
+
+/* Focus */
+button:focus, .btn:focus, input[type='submit']:focus {
+  border-color: #717171;
+  background: linear-gradient(#eee,#dcdcdc);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1); }
+
+/* Focus + Hover will be given Focus outline, once Active is off */
+button:focus:hover, .btn:focus:hover, input[type='submit']:focus:hover {
+  border-color: #7c7c7c;
+  background: linear-gradient(#f2f2f2,#e7e7e7);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+
+/* Hover */
+button:hover, .btn:hover, input[type='submit']:hover {
+  background: linear-gradient(#f9f9f9,#eee);
+  border-color: #c6c6c6;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
+
+/* Active, & Active + Hover will retain flat styling */
+button:active, .btn:active, input[type='submit']:active, button:active:hover, .btn:active:hover, input[type='submit']:active:hover {
+  box-shadow: none;
+  border-color: #999;
+  background: linear-gradient(#f2f2f2,#e7e7e7); }
+  
+/* Disabled */
+button:disabled, a.disabled, input[type='submit']:disabled, button:hover:disabled, a.disabled:hover, input[type='submit']:hover:disabled, button:active:disabled, a.disabled:active, input[type='submit']:active:disabled {
+  background: #ccc;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 15px, rgba(255,255,255,.2) 15px, rgba(255,255,255,.2) 30px);
+  box-shadow: none;
+  border-color: #ccc;
+  color: #777;
+  font-weight: normal;
+  /*cursor: not-allowed;*/
+  pointer-events: none; }

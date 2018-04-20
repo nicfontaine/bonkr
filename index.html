@@ -9,6 +9,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./src/bonkr.css">
+  <!-- <link rel="stylesheet" href="./src/bonkr-btns.css"> -->
   <style>
     /* This is just to breakup the layout on this page */
     @media (min-width: 768px) {
@@ -416,7 +417,7 @@ ooh yea..</code></pre>
       <h3 id='buttons'>Buttons <a href='#buttons' class='linker' title='anchor to buttons'>#</a></h3>
 
       <p>
-        <b>No</b>, there aren't <code>.filled</code>, <code>.knockout</code>, <code>.ghost</code>, <code>.simple</code> classes in a variety of <em>Material<sup>TM</sup></em> pallettes &mdash; <b>yes</b>, <code>:focus</code>, <code>:hover</code>, <code>:active</code>, <code>:disabled</code>, <code>:focus:hover</code>, &amp; <code>:active:hover</code> are taken care of.
+        ...You should be styling your own. In lieu of a generic suite of buttons you'll find basic hover/focus styles on all of like 5 lines, so as not to conflict with your project.
       </p>
 
       <p>
@@ -425,17 +426,19 @@ ooh yea..</code></pre>
 
       <div class='mg-t-8'>
       
-        <button type='button' class='mg-b-4'>button</button><button type='button' class='mg-b-4'>button</button> &nbsp; <code>&lt;br&gt;</code><br>
+        <button class='mg-b-4'>button</button><button class='mg-b-4'>button</button> &nbsp; <code>&lt;br&gt;</code><br>
 
-        <button type='button' class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button><button type='button' class='mg-b-4'>button</button>
+        <button class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button><button class='mg-b-4'>button</button>
 
-        <button type='button' class='d-block mg-b-4'>button <span class='text-code'>.d-block</span></button>
+        <button class='d-block mg-b-4'>button <span class='text-code'>.d-block</span></button>
 
-        <button type='button' class='d-block rnd-4 mg-b-4'>button <span class='text-code'>.d-block .rnd-4</span></button>
+        <input class='d-block mg-b-4' type='submit' value='input type="submit"'>
 
-        <button type='button' class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button>
+        <!-- <button class='d-block rnd-4 mg-b-4'>button <span class='text-code'>.d-block .rnd-4</span></button> -->
 
-        <button type='button' class='w-full mg-b-4'>button <span class='text-code'>.w-full</span></button>
+        <!-- <button class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button> -->
+
+        <button class='w-full mg-b-4'>button <span class='text-code'>.w-full</span></button>
 
       </div>
 
@@ -453,7 +456,7 @@ ooh yea..</code></pre>
         Similarly, <code>:disabled</code> and <code>.disabled</code> function the same way.
       </p>
 
-      <button type='button' class='d-block mg-b-4' disabled>button <span class='text-code'>:disabled</span></button
+      <button class='d-block mg-b-4' disabled>button <span class='text-code'>:disabled</span></button
       ><a class='btn mg-b-4 disabled'>a <span class='text-code'>.btn .disabled</span></a
       >
 
@@ -469,10 +472,10 @@ ooh yea..</code></pre>
       </p>
         
       <p>
-        <button type='button' class='dialog-btn-open mg-b-4 mg-r-2' data-dialog-id='0'>
+        <button class='dialog-btn-open mg-b-4 mg-r-2' data-dialog-id='0'>
           Open Dialog 1
         </button>
-        <button type='button' class='dialog-btn-open' data-dialog-id='foo'>
+        <button class='dialog-btn-open' data-dialog-id='foo'>
           Open Dialog 2
         </button>
       </p>
@@ -541,8 +544,8 @@ ooh yea..</code></pre>
       <form>
       <label class='d-block text-center mg-b-3'>label <span class='text-code'>.d-block .text-center</span></label>
         <div class='d-flx flx-row flx-children-1 flx-children-spc-1 flx-spc-1'>
-          <label>label<input type='text' placeholder='text'></label>
-          <label>label<input type='email' placeholder='email'></label>
+          <label>label<input type='text' placeholder='Text'></label>
+          <label>label<input type='email' placeholder='Email'></label>
         </div>
         <input type='number' placeholder='0'>
         <input type='tel' placeholder='000-000-0000'>
@@ -555,7 +558,7 @@ ooh yea..</code></pre>
           </select>
           <input type='range'>
         </div>
-        <textarea placeholder='textarea'></textarea>
+        <textarea placeholder='Textarea'></textarea>
         <input type='checkbox'><input type='checkbox' checked><br>
         <input type='radio' name='radio'><input type='radio' name='radio' checked>
         <input type='submit' class='d-block' value='Submit'>
