@@ -37,7 +37,7 @@ template, [hidden] { display: none; }
 button, input { overflow: visible; }
 button, select { text-transform: none; }
 button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
-a:active, a:hover { outline-width: 0; }
+/* a:active, a:hover { outline-width: 0; } */
 a { background-color: transparent; -webkit-text-decoration-skip: objects; }
 abbr[title] { border-bottom: none; text-decoration: underline; text-decoration: underline dotted; }
 b, strong { font-weight: inherit; }
@@ -116,19 +116,8 @@ hr {
 a { text-decoration: underline; font-weight: bold; position: relative; }
 a, a:active, a:visited, a:hover { color: inherit;  }
 
-/* a:hover, a:focus { text-decoration: none; } */
-/* a:hover:before, a:focus:before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  right: 0; left: 0;
-  height: 3px;
-  background: #ccc;
-  bottom: 0;
-  z-index: -1;
-} */
-
-a:focus { outline: 2px solid rgba(0,0,0,0.4); text-decoration: none;}
+a:hover { background: rgba(0,0,0,0.04); }
+a:focus { outline: 2px solid rgba(0,0,0,0.6); text-decoration: none;}
 
 /* Default Layout Styling for Semantic Elements */
 article {
@@ -317,27 +306,34 @@ pre > code {
   font-weight: bold; }
 
 button, .btn, input[type='submit'] {
+  display: inline-block;
+  border: none;
   cursor: pointer;
   line-height: 1rem;
   font-size: 1rem;
-  padding: .47rem .95rem;
+  padding: .5rem 1rem;
   color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-family: inherit;
-  border: none;
   font-weight: bold; }
 
 /* Begin Basic Button Styling */
 button, .btn, input[type='submit'] {
-  border: 1px solid rgba(0,0,0,0.15);
+  outline: 1px solid rgba(0,0,0,0.1);
+  outline-offset: -1px;
   background: rgba(0,0,0,0.04); }
 button:focus, .btn:focus, input[type='submit']:focus, button:hover, .btn:hover, input[type='submit']:hover {
-  border: 1px solid rgba(0,0,0,0.6); }
+  background:  rgba(0,0,0,0.06); }
+button:focus, .btn:focus, input[type='submit']:focus {
+  outline: 2px solid rgba(0,0,0,0.6);
+  outline-offset: -2px; }
 button:disabled, a.disabled, input[type='submit']:disabled, button:hover:disabled, a.disabled:hover, input[type='submit']:hover:disabled, button:active:disabled, a.disabled:active, input[type='submit']:active:disabled {
   border: none;
   cursor: not-allowed; }
-a.btn {
+/* a.btn {
   outline: none;
-}
+} */
 /* End Basic Button Styling */
 
 .btn, .btn:hover, .btn:focus { text-decoration: none; display: inline-block; }
