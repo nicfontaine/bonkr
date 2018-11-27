@@ -11,7 +11,7 @@ It's created as a starter-template with default component proportions & weight a
 
 You won't find any **colours**, **embedded fonts**, or **navigation** here - just a beautiful blank-slate for your content.
 
-![screenshot](https://nicfontaine.com/img/interactive/bonkr-screen-01-c.png)
+![screenshot](./img/bonkr-screen-01-c.png)
 
 ## Table of Contents
 - [Getting Started](https://nicfontaine.com/dev/bonkr#getting-started)
