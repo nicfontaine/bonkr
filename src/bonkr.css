@@ -188,11 +188,13 @@ figure.frame {
 
 .ttip-text {
   position: absolute;
-  display: table;
+  display: inline;
   pointer-events: none;
   background: rgba(0,0,0,0.8);
   color: #ddd;
   font-style: italic;
+  white-space: nowrap;
+  line-height: inherit;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   border-radius: 6px;
   padding: 0 6px;
@@ -200,6 +202,7 @@ figure.frame {
   opacity: 0; }
 
 .ttip:hover .ttip-text {
+  z-index: 100;
   opacity: 1; }
 
 .ttip.t .ttip-text { top: 0; transform: translate(0,-100%); right: 0; left: 0; margin: 0 auto; }
@@ -422,6 +425,7 @@ section, article, aside, sidebar {
   color: #3a3a3a; }
 
 /*** Text Styles ***/
+.text-normal { font-weight: initial; font-style: initial; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
@@ -429,6 +433,11 @@ section, article, aside, sidebar {
 .text-bold { font-weight: bold; }
 .text-italic { font-style: italic; }
 .text-up { text-transform: uppercase; }
+.text-small { font-size: 0.93rem; }
+.text-smaller { font-size: 0.85rem; }
+.text-smallest { font-size: 0.7rem; }
+.text-ul { text-decoration: underline; }
+
 /* (NOTE) Need to Re-style */
 .text-key {
   padding: 7px 9px;
@@ -535,7 +544,12 @@ code.d-block { margin-right: 0; margin-left: 0; }
 
 /*** Templating --- Margin ***/
 .mg-0-auto { margin: 0 auto; }
-.mg-a-0 { margin: 0; }
+.mg-a-0, .mg-ch-a-0 > * { margin: 0; }
+.mg-l-auto { margin-left: auto; }
+.mg-r-auto { margin-right: auto; }
+.mg-t-auto { margin-top: auto; }
+.mg-b-auto { margin-bottom: auto; }
+
 .mg-a-1 { margin: 0.3rem; }
 .mg-a-2 { margin: 0.59rem; }
 .mg-a-3 { margin: 0.88rem; }
@@ -590,6 +604,8 @@ code.d-block { margin-right: 0; margin-left: 0; }
 /*button.w-full, input[type='submit'].w-full { display: block; }*/
 
 /*** Templating --- Max Width ***/
+.w-mx-100 { max-width: 100px; }
+.w-mx-150 { max-width: 150px; }
 .w-mx-200 { max-width: 200px; }
 .w-mx-250 { max-width: 250px; }
 .w-mx-300 { max-width: 300px; }
@@ -623,7 +639,7 @@ code.d-block { margin-right: 0; margin-left: 0; }
 
 /*** Flex ***/
 .d-flx { display: flex; }
-.d-flx > * { width: initial; }
+.d-flx > * { width: initial; min-width: 0; min-height: 0; }
 
 /* For Parent Container */
 .flx-row { flex-direction: row; }
@@ -647,16 +663,12 @@ code.d-block { margin-right: 0; margin-left: 0; }
 .flx-children-s-0 > * { flex-shrink: 0; }
 .flx-children-s-1 > * { flex-shrink: 1; }
 
-/*.flx-children-spc-1 > * { margin: 0 0.3rem 0.6rem; }
-.flx-children-spc-2 > * { margin: 0 0.59rem 1.18rem; }
-.flx-children-spc-3 > * { margin: 0 0.88rem 1.76rem; }
-.flx-children-spc-4 > * { margin: 0 1.18rem 2.36rem; }*/
-.flx-children-spc-1 > * { margin-left: 0.3rem; margin-right: 0.3rem; margin-bottom: 0.6rem; }
-.flx-children-spc-2 > * { margin-left: 0.59rem; margin-right: 0.59rem; margin-bottom: 1.18rem; }
-.flx-children-spc-3 > * { margin-left: 0.88rem; margin-right: 0.88rem; margin-bottom: 1.76rem; }
-.flx-children-spc-4 > * { margin-left: 1.18rem; margin-right: 1.18rem; margin-bottom: 2.36rem; }
+.flx-spc-1 > * { margin-left: 0.3rem; margin-right: 0.3rem; margin-bottom: 0.6rem; }
+.flx-spc-2 > * { margin-left: 0.59rem; margin-right: 0.59rem; margin-bottom: 1.18rem; }
+.flx-spc-3 > * { margin-left: 0.88rem; margin-right: 0.88rem; margin-bottom: 1.76rem; }
+.flx-spc-4 > * { margin-left: 1.18rem; margin-right: 1.18rem; margin-bottom: 2.36rem; }
 
-/* For Children */
+/* For Individual Children */
 .flx-child-0 { flex: 0; }
 .flx-child-0-5 { flex: 0.5; }
 .flx-child-1 { flex: 1; }
