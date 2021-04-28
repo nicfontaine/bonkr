@@ -269,7 +269,8 @@ input[type='range'] {
   /*margin: 0;*/
 }
 
-select { padding: 0 .58rem; }
+/* select { padding: 0 .58rem; } */
+select { padding: .58rem; }
 
 textarea {
   min-height: 12rem;

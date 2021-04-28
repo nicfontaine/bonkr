@@ -19,13 +19,13 @@
 </head>
 <body>
 
-  <header class='pd-a-4' style=''>
-    <section class='w-mx-1100 pd-t-0 pd-b-0'>
-      <div class='d-flx flx-wr-w flx-spc-1 flx-children-spc-1'>
-        <a class='pos-abs' href='https://nicfontaine.com' title='created by nic fontaine' target='_blank'>nicfontaine.com</a>
-        <span class='flx-child-1'></span>
-        <a class='btn' href='https://github.com/ngpfontaine/bonkr' title='the code on github' target='_blank'>The Code &nearr;</a>
-        <a class='btn' href='https://jsfiddle.net/ngpfontaine/jp0z0ago/' target='_blank'>Try on JSFiddle &nearr;</a>
+  <header class="pd-a-4" style="">
+    <section class="w-mx-1100 pd-t-0 pd-b-0">
+      <div class="d-flx flx-wr-w flx-spc-1 flx-children-spc-1">
+        <a class="pos-abs" href="https://nicfontaine.com" title="created by nic fontaine" target="_blank">nicfontaine.com</a>
+        <span class="flx-child-1"></span>
+        <a class="btn" href="https://github.com/ngpfontaine/bonkr" title="the code on github" target="_blank">The Code &nearr;</a>
+        <a class="btn" href="https://jsfiddle.net/ngpfontaine/jp0z0ago/" target="_blank">Try on JSFiddle &nearr;</a>
       </div>
   </section>
   </header>
@@ -33,17 +33,17 @@
   <main>
 
     <section>
-      <a class='d-table mg-0-auto' href='./img/bonkr-logo.png' target='_blank'><img class='mg-0-auto mg-b-5 w-mx-250' src='./img/bonkr-logo.png' alt='bonkr logo. stupid looking face thing'></a>
-      <h1 class='text-center mg-b-0'>BONKR</h1>
+      <a class="d-table mg-0-auto" href="./img/bonkr-logo.png" target="_blank"><img class="mg-0-auto mg-b-5 w-mx-250" src="./img/bonkr-logo.png" alt="bonkr logo. stupid looking face thing"></a>
+      <h1 class="text-center mg-b-0">BONKR</h1>
 
-      <p class='text-center'>
+      <p class="text-center">
         <strong>B</strong>oilerplate - <strong>O</strong>pinionated <em>(kinda)</em>, <strong>N</strong>a<strong>K</strong>ed, &amp; <strong>R</strong>esponsive
       </p>
 
-      <blockquote class='mg-t-8'>
+      <blockquote class="mg-t-8">
 
       <p>
-        Bonkr is a normalized CSS boilerplate with a focus on <strong>style-agnostic</strong> usability, a simple <strong>layout system</strong>, and <strong>responsive flexibility</strong>. It's created as a starter-template with default component proportions &amp; weight and some basic styling that won't conflict with yours, + some nice (and independant) features like <a href='#dialogs'>dialogs</a> and a <a href='#loader'>loader</a>.
+        Bonkr is a normalized CSS boilerplate with a focus on <strong>style-agnostic</strong> usability, a simple <strong>layout system</strong>, and <strong>responsive flexibility</strong>. It's created as a starter-template with default component proportions &amp; weight and some basic styling that won't conflict with yours, + some nice (and independant) features like <a href="#dialogs">dialogs</a> and a <a href="#loader">loader</a>.
       </p>
 
       <p>
@@ -56,44 +56,45 @@
     <!--*************** Getting Started *******************-->    
     <section>
 
-      <h3 id='getting-started'>Getting Started <a href='#getting-started' class='linker' title='anchor to getting started'>#</a></h3>
+      <h3 id="getting-started">Getting Started <a href="#getting-started" class="linker" title="anchor to getting started">#</a></h3>
 
       <p>
         <b>1.</b> Get The Code
       </p>
 
       <p>
-        <div class='d-flx flx-w flx-spc-2 flx-children-spc-2 flx-children-s-0'>
-          <a href='https://github.com/ngpfontaine/bonkr' class='btn' target='_blank' title='github download'>Download on Github</a><a href='https://jsfiddle.net/ngpfontaine/jp0z0ago/' class='btn' target='_blank' title='test on jsfiddle'>Test on JSFiddle</a>
+        <div class="d-flx flx-w flx-spc-2 flx-children-spc-2 flx-children-s-0">
+          <a href="https://github.com/ngpfontaine/bonkr" class="btn" target="_blank" title="github download">Download on Github</a><a href="https://jsfiddle.net/ngpfontaine/jp0z0ago/" class="btn" target="_blank" title="test on jsfiddle">Test on JSFiddle</a>
         </div>
       </p>
 
 <pre><code>bonkr/
-  <span class='tag'>├──</span> index.html
-  <span class='tag'>├──</span> readme.md
-  <span class='tag'>└──</span> src/
-      <span class='tag'>├──</span> bonkr.css
-      <span class='tag'>├──</span> bonkr-dialog.js
-      <span class='tag'>└──</span> bonkr-loader.js
+  <span class="tag">├──</span> index.html
+  <span class="tag">├──</span> readme.md
+  <span class="tag">└──</span> src/
+      <span class="tag">├──</span> bonkr.css
+      <span class="tag">├──</span> bonkr-dialog.js
+      <span class="tag">├──</span> bonkr-dropdown-buttons.js
+      <span class="tag">└──</span> bonkr-loader.js
 </code></pre>
 
-      <p class='pd-t-4'>
+      <p class="pd-t-4">
         <b>2.</b> &nbsp; Add files to your project<br>
       </p>
 
-<pre><code class='allselect'><span class='tag'>&lt;html&gt;
+<pre><code class="allselect"><span class="tag">&lt;html&gt;
   &lt;head&gt;
-    &lt;link rel="stylesheet" href="./</span>&lt;your-path&gt;<span class='tag'>/bonkr.css"&gt;
+    &lt;link rel="stylesheet" href="./</span>&lt;your-path&gt;<span class="tag">/bonkr.css"&gt;
   &lt;/head&gt;
   &lt;body&gt;</span>
     <em>// Content</em>
-    <span class='tag'>&lt;script src="./</span>&lt;your-path&gt;<span class='tag'>/bonkr-dialog.js"&gt;&lt;/script&gt;
-    &lt;script src="./</span>&lt;your-path&gt;<span class='tag'>/bonkr-loader.js"&gt;&lt;/script&gt;
+    <span class="tag">&lt;script src="./</span>&lt;your-path&gt;<span class="tag">/bonkr-dialog.js"&gt;&lt;/script&gt;
+    &lt;script src="./</span>&lt;your-path&gt;<span class="tag">/bonkr-loader.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</span>
 </code></pre>
 
-      <p class='pd-t-4'>
+      <p class="pd-t-4">
         <b>3.</b> &nbsp; Code away &mdash; <em>and/or</em> check out the documentation below<br>
       </p>
 
@@ -102,21 +103,21 @@
     <!--*************** Text *******************-->
     <section>
 
-      <h3 id='typography'>Typography <a href='#typography' class='linker' title='anchor to paragraph'>#</a></h3>
+      <h3 id="typography">Typography <a href="#typography" class="linker" title="anchor to paragraph">#</a></h3>
 
       <p>
         Font-sizing is <code>rem</code> based, relative to <code>html { font-size: 17px; line-height: 1.6 }</code>. No <code>font-family</code> is chosen, other than <code>sans-serif</code>, for simplicity &mdash; just copy the <em>Open Sans, Proxima Nova, &amp; Roboto</em> link tags from your other projects...
       </p>
 
-<pre><code><span class='tag'>&lt;p&gt;</span>
-  Font-sizing is <span class='tag'>&lt;code&gt;</span>rem<span class='tag'>&lt;/code&gt;</span> based...
-<span class='tag'>&lt;/p&gt;</span>
+<pre><code><span class="tag">&lt;p&gt;</span>
+  Font-sizing is <span class="tag">&lt;code&gt;</span>rem<span class="tag">&lt;/code&gt;</span> based...
+<span class="tag">&lt;/p&gt;</span>
 </code></pre>
 
-      <div class='pd-t-8'></div>
+      <div class="pd-t-8"></div>
 
       <p>
-        <a href=''>Anchor</a> &nbsp; <code>&lt;a&gt;</code><br>
+        <a href="">Anchor</a> &nbsp; <code>&lt;a&gt;</code><br>
         <u>Underline</u> &nbsp; <code>&lt;u&gt;</code><br>
         <em>Emphasis</em> &nbsp; <code>&lt;em&gt;</code><br>
         <strong>Strong</strong> &nbsp; <code>&lt;strong&gt;</code><br>
@@ -131,15 +132,15 @@
 
     <section>
 
-      <h3 id='headings'>Headings <a href='#headings' class='linker' title='anchor to headings'>#</a></h3>
+      <h3 id="headings">Headings <a href="#headings" class="linker" title="anchor to headings">#</a></h3>
 
       <blockquote>
       <p>
-        <em><strong>Note</strong> &mdash; &nbsp;Each section heading on this page ("Headings" immediately above) is an <code>&lt;h3&gt;</code></em>
+        <em><strong>Note</strong> &mdash; &nbsp;Each section heading on this page (like "Headings" immediately above) is an <code>&lt;h3&gt;</code></em>
       </p>
     </blockquote>
 
-      <div class='pd-t-8'></div>
+      <div class="pd-t-8"></div>
 
       <h1>Serenity Now!</h1>
       <h2>I Want To Believe</h2>
@@ -148,21 +149,21 @@
       <h5>Fuck Trump</h5>
       <h6>Your Bootstrap Site Sucks</h6>
 
-      <div class='pd-t-3'></div>
+      <div class="pd-t-3"></div>
 
-<pre><code><span class='tag'>&lt;h1&gt;</span> 3.4rem
-<span class='tag'>&lt;h2&gt;</span> 2.8rem
-<span class='tag'>&lt;h3&gt;</span> 2.3rem
-<span class='tag'>&lt;h4&gt;</span> 1.7rem
-<span class='tag'>&lt;h5&gt;</span> 1.3rem
-<span class='tag'>&lt;h6&gt;</span> 1.1rem
+<pre><code><span class="tag">&lt;h1&gt;</span> 3.4rem
+<span class="tag">&lt;h2&gt;</span> 2.8rem
+<span class="tag">&lt;h3&gt;</span> 2.3rem
+<span class="tag">&lt;h4&gt;</span> 1.7rem
+<span class="tag">&lt;h5&gt;</span> 1.3rem
+<span class="tag">&lt;h6&gt;</span> 1.1rem
 </code></pre>
 
     </section>
 
     <section>
 
-      <h3 id='hr'>Hr <a href='#hr' class='linker' title='anchor to horizontal'>#</a></h3>
+      <h3 id="hr">Hr <a href="#hr" class="linker" title="anchor to horizontal">#</a></h3>
       
       <hr>
 
@@ -176,7 +177,7 @@
         <span class="ttip tr">Hover for tooltip!<span class="ttip-text">Tooltip</span></span>
       </p>
 
-<pre><code class='allselect'><span class='tag'>&lt;span class="ttip tr"&gt;</span>Hover for tooltip!<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<pre><code class="allselect"><span class="tag">&lt;span class="ttip tr"&gt;</span>Hover for tooltip!<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
 </code></pre>
 
       <p>
@@ -196,22 +197,22 @@
         </div>
       </p>
 
-<pre><code class='allselect'><span class='tag'>&lt;span class="ttip t"&gt;</span>Top<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
-<span class='tag'>&lt;span class="ttip r"&gt;</span>Right<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
-<span class='tag'>&lt;span class="ttip b"&gt;</span>Bottom<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
-<span class='tag'>&lt;span class="ttip l"&gt;</span>Left<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<pre><code class="allselect"><span class="tag">&lt;span class="ttip t"&gt;</span>Top<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip r"&gt;</span>Right<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip b"&gt;</span>Bottom<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip l"&gt;</span>Left<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
 
-<span class='tag'>&lt;span class="ttip tr"&gt;</span>Top-Right<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
-<span class='tag'>&lt;span class="ttip br"&gt;</span>Bottom-Right<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
-<span class='tag'>&lt;span class="ttip bl"&gt;</span>Bottom-Left<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
-<span class='tag'>&lt;span class="ttip tl"&gt;</span>Top-Left<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip tr"&gt;</span>Top-Right<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip br"&gt;</span>Bottom-Right<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip bl"&gt;</span>Bottom-Left<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span class="ttip tl"&gt;</span>Top-Left<span class="tag">&lt;span class="ttip-text"></span>Tooltip<span class="tag">&lt;/span&gt;</span>
 </code></pre>
 
     </section>
 
     <section>
 
-      <h3 id='lists'>Lists <a href='#lists' class='linker' title='anchor to lists'>#</a></h3>
+      <h3 id="lists">Lists <a href="#lists" class="linker" title="anchor to lists">#</a></h3>
 
       <ul>
         <li>waffle</li>
@@ -235,9 +236,9 @@
 
     <section>
 
-      <h3 id='blockquote'>Blockquote <a href='#blockquote' class='linker' title='anchor to blockquote'>#</a></h3>
+      <h3 id="blockquote">Blockquote <a href="#blockquote" class="linker" title="anchor to blockquote">#</a></h3>
       
-      <blockquote class='quote'>
+      <blockquote class="quote">
 
         <p>
           I am a <strong>blockquote</strong>, and adding <code>.quote</code> will display this nifty quote on the right.
@@ -245,11 +246,11 @@
 
       </blockquote>
 
-<pre><code class='allselect'><span class='tag'>&lt;blockquote class='quote'&gt;</span>
-  <span class='tag'>&lt;p&gt;</span>
-    I am a <span class='tag'>&lt;strong&gt;</span>blockquote<span class='tag'>&lt;/strong&gt;</span>, and adding <span class='tag'>&lt;code&gt;</span>.quote<span class='tag'>&lt;/code&gt;</span> will display this nifty quote on the right.
-  <span class='tag'>&lt;/p&gt;</span>
-<span class='tag'>&lt;/blockquote&gt;</span>
+<pre><code class="allselect"><span class="tag">&lt;blockquote class="quote"&gt;</span>
+  <span class="tag">&lt;p&gt;</span>
+    I am a <span class="tag">&lt;strong&gt;</span>blockquote<span class="tag">&lt;/strong&gt;</span>, and adding <span class="tag">&lt;code&gt;</span>.quote<span class="tag">&lt;/code&gt;</span> will display this nifty quote on the right.
+  <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/blockquote&gt;</span>
 </code></pre>
 
     </section>
@@ -257,9 +258,9 @@
     <!--*************** TABLES *******************-->
     <section>  
       
-      <h3 id='tables'>Tables <a href='#tables' class='linker' title='anchor to tables'>#</a></h3>
+      <h3 id="tables">Tables <a href="#tables" class="linker" title="anchor to tables">#</a></h3>
 
-      <table class='mg-b-8'>
+      <table class="mg-b-8">
         <thead>
         <tr>
           <th>Class</th>
@@ -286,29 +287,29 @@
         </tbody>
       </table>
 
-<pre><code class='allselect'><span class='tag'>&lt;table&gt;
+<pre><code class="allselect"><span class="tag">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;</span>Class<span class='tag'>&lt;/th&gt;
-      &lt;th&gt;</span>Subrace<span class='tag'>&lt;/th&gt;
-      &lt;th&gt;</span>Ability Bonus<span class='tag'>&lt;/th&gt;
+      &lt;th&gt;</span>Class<span class="tag">&lt;/th&gt;
+      &lt;th&gt;</span>Subrace<span class="tag">&lt;/th&gt;
+      &lt;th&gt;</span>Ability Bonus<span class="tag">&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;</span>Dwarf<span class='tag'>&lt;/td&gt;
-      &lt;td&gt;</span>Hill, Mountain<span class='tag'>&lt;/td&gt;
-      &lt;td&gt;</span>+2 Constitution<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>Dwarf<span class="tag">&lt;/td&gt;
+      &lt;td&gt;</span>Hill, Mountain<span class="tag">&lt;/td&gt;
+      &lt;td&gt;</span>+2 Constitution<span class="tag">&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;</span>Halfling<span class='tag'>&lt;/td&gt;
-      &lt;td&gt;</span>Lightfoot, Stout<span class='tag'>&lt;/td&gt;
-      &lt;td&gt;</span>+2 Dexterity<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>Halfling<span class="tag">&lt;/td&gt;
+      &lt;td&gt;</span>Lightfoot, Stout<span class="tag">&lt;/td&gt;
+      &lt;td&gt;</span>+2 Dexterity<span class="tag">&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;</span>Elf<span class='tag'>&lt;/td&gt;
-      &lt;td&gt;</span>High, Wood, Drow<span class='tag'>&lt;/td&gt;
-      &lt;td&gt;</span>+2 Dexterity<span class='tag'>&lt;/td&gt;
+      &lt;td&gt;</span>Elf<span class="tag">&lt;/td&gt;
+      &lt;td&gt;</span>High, Wood, Drow<span class="tag">&lt;/td&gt;
+      &lt;td&gt;</span>+2 Dexterity<span class="tag">&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</span>
@@ -318,25 +319,25 @@
 
     <section>
 
-      <h3 id='code'>Code <a href='#code' class='linker' title='anchor to code'>#</a></h3>
+      <h3 id="code">Code <a href="#code" class="linker" title="anchor to code">#</a></h3>
       
       <p>
         <code><b>I</b> am inline</code> with other text
       </p>
 
-      <pre><code><span class='tag'>&lt;code&gt;</span>I am inline<span class='tag'>&lt;/code&gt;</span> with other text</code></pre>
+      <pre><code><span class="tag">&lt;code&gt;</span>I am inline<span class="tag">&lt;/code&gt;</span> with other text</code></pre>
 
       <hr>
 
 <pre><code>But <b><em>I</em></b> am a big block of code,
 ooh yea..</code></pre>
 
-<pre><code><span class='tag'>&lt;pre&gt;</span>
-  <span class='tag'>&lt;code&gt;</span>
+<pre><code><span class="tag">&lt;pre&gt;</span>
+  <span class="tag">&lt;code&gt;</span>
     But I am a big block of code,
     ooh yea...
-  <span class='tag'>&lt;/code&gt;</span>
-<span class='tag'>&lt;/pre&gt;</span>
+  <span class="tag">&lt;/code&gt;</span>
+<span class="tag">&lt;/pre&gt;</span>
 </code></pre>
 
     </section>
@@ -344,31 +345,31 @@ ooh yea..</code></pre>
     <!--*************** SECTIONS *******************-->    
     <section>
 
-    <h3 id='sections'>Sections <a href='#sections' class='linker' title='anchor to buttons'>#</a></h3>
+    <h3 id="sections">Sections <a href="#sections" class="linker" title="anchor to buttons">#</a></h3>
 
     <p>
       Structural basics in <b>BONKR</b> are focused on <code>&lt;main&gt;</code> content. Each section on this page lies within a <em>(you guessed it)</em> <code>&lt;section&gt;</code>, which are <b>centered</b>, with <b>padding</b>, &amp; <b>max width</b>.
     </p>
 
-<pre><code><span class='tag'>section {</span>
+<pre><code><span class="tag">section {</span>
   margin: 0 auto;
   max-width: 1100px;
-  padding: 1.76rem 2.35rem; <span class='tag'>}</span></code></pre>
+  padding: 1.76rem 2.35rem; <span class="tag">}</span></code></pre>
 
-    <div class='pd-t-4'></div>
+    <div class="pd-t-4"></div>
 
     <hr>
 
-    <div class='pd-t-4'></div>
+    <div class="pd-t-4"></div>
 
     <blockquote>
       <p>
-        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, &amp; <code>&lt;aside&gt;</code> are left alone to avoid "Bootstrapping" your styles. When adding these, you can use the <a href='#flexbox'>flex</a> helper classes below for layout; or just write custom styling.
+        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, &amp; <code>&lt;aside&gt;</code> are left alone to avoid "Bootstrapping" your styles. When adding these, you can use the <a href="#flexbox">flex</a> helper classes below for layout; or just write custom styling.
       </p>
     </blockquote>
 
     <p>
-      You can <em>obv</em> overwrite the above styling with your preferred <code>max-width</code>, or use the <a href='#max-width'>.w-mx-#</a> helper classes below.
+      You can <em>obv</em> overwrite the above styling with your preferred <code>max-width</code>, or use the <a href="#max-width">.w-mx-#</a> helper classes below.
     </p>
 
     </section>
@@ -379,23 +380,23 @@ ooh yea..</code></pre>
 
       <section>
 
-        <h3 id='articles'>Articles <a href='#articles' class='linker' title='anchor to articles'>#</a></h3>
+        <h3 id="articles">Articles <a href="#articles" class="linker" title="anchor to articles">#</a></h3>
 
         <p>
           An <code>&lt;article&gt;</code> is used to make a full-width bar like this. This is helpful when you want a <code>background-colour</code>, <code>background-image</code>, or <code>width: 100%</code> content. Since the <code>&lt;section&gt;</code> is a centered container, you can nest one inside to hold your content. 
         </p>
 
-<pre class='mg-b-7'><code class='allselect'><span class='tag'>&lt;article&gt;</span>
-  <span class='tag'>&lt;section&gt;</span>
-    <span class='tag'>&lt;p&gt;</span>
+<pre class="mg-b-7"><code class="allselect"><span class="tag">&lt;article&gt;</span>
+  <span class="tag">&lt;section&gt;</span>
+    <span class="tag">&lt;p&gt;</span>
       I am an article
-    <span class='tag'>&lt;/p&gt;</span>
-  <span class='tag'>&lt;/section&gt;</span>
-<span class='tag'>&lt;/article&gt;</span></code></pre>
+    <span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/section&gt;</span>
+<span class="tag">&lt;/article&gt;</span></code></pre>
 
-        <div class='pd-t-8'></div>
+        <div class="pd-t-8"></div>
 
-        <h6 class='text-up'>Why?</h6>
+        <h6 class="text-up">Why?</h6>
 
         <blockquote>
           <p>
@@ -403,9 +404,9 @@ ooh yea..</code></pre>
           </p>
         </blockquote>
 
-<pre><code><span class='tag'>article {</span>
+<pre><code><span class="tag">article {</span>
   margin: 3.52rem 0;
-  background: #f2f2f2; <span class='tag'>}</span></code></pre>
+  background: #f2f2f2; <span class="tag">}</span></code></pre>
 
       </section>
 
@@ -414,31 +415,31 @@ ooh yea..</code></pre>
     <!--*************** BUTTONS, LINKS *******************-->
     <section>  
 
-      <h3 id='buttons'>Buttons <a href='#buttons' class='linker' title='anchor to buttons'>#</a></h3>
+      <h3 id="buttons">Buttons <a href="#buttons" class="linker" title="anchor to buttons">#</a></h3>
 
       <p>
-        ...You should be styling your own. In lieu of a generic suite of buttons you'll find basic hover/focus styles on all of like 5 lines, so as not to conflict with your project.
+        ...You should be styling your own. In lieu of a generic suite of buttons you"ll find basic hover/focus styles on all of like 5 lines, so as not to conflict with your project.
       </p>
 
       <p>
-        Buttons have no spacing if they're butt-to-butt, but you can add margin classes or group into a <a href='#flexbox'>flex</a> container for separation.
+        Buttons have no spacing if they're butt-to-butt, but you can add margin classes or group into a <a href="#flexbox">flex</a> container for separation.
       </p>
 
-      <div class='mg-t-8'>
+      <div class="mg-t-8">
       
-        <button class='mg-b-4'>button</button><button class='mg-b-4'>button</button> &nbsp; <code>&lt;br&gt;</code><br>
+        <button class="mg-b-4">button</button><button class="mg-b-4">button</button> &nbsp; <code>&lt;br&gt;</code><br>
 
-        <button class='mg-b-4 mg-r-4'>button <span class='text-code'>.mg-r-4</span></button><button class='mg-b-4'>button</button>
+        <button class="mg-b-4 mg-r-4">button <span class="text-code">.mg-r-4</span></button><button class="mg-b-4">button</button>
 
-        <button class='d-block mg-b-4'>button <span class='text-code'>.d-block</span></button>
+        <button class="d-block mg-b-4">button <span class="text-code">.d-block</span></button>
 
-        <input class='d-block mg-b-4' type='submit' value='input type="submit"'>
+        <input class="d-block mg-b-4" type="submit" value="input type='submit'">
 
-        <!-- <button class='d-block rnd-4 mg-b-4'>button <span class='text-code'>.d-block .rnd-4</span></button> -->
+        <!-- <button class="d-block rnd-4 mg-b-4">button <span class="text-code">.d-block .rnd-4</span></button> -->
 
-        <!-- <button class='d-block rnd-10 mg-b-4'>button <span class='text-code'>.d-block .rnd-10</span></button> -->
+        <!-- <button class="d-block rnd-10 mg-b-4">button <span class="text-code">.d-block .rnd-10</span></button> -->
 
-        <button class='w-full mg-b-4'>button <span class='text-code'>.w-full</span></button>
+        <button class="w-full mg-b-4">button <span class="text-code">.w-full</span></button>
 
       </div>
 
@@ -448,7 +449,7 @@ ooh yea..</code></pre>
         Helper class <code>.btn</code> actually has all of the same styles as <code>&lt;button&gt;</code>, if you'd like to style a link.
       </p>
 
-      <a href='' class='btn mg-b-4'>a <span class='text-code'>.btn</span></a>
+      <a href="" class="btn mg-b-4">a <span class="text-code">.btn</span></a>
 
       <hr>
 
@@ -456,8 +457,8 @@ ooh yea..</code></pre>
         Similarly, <code>:disabled</code> and <code>.disabled</code> function the same way.
       </p>
 
-      <button class='d-block mg-b-4' disabled>button <span class='text-code'>:disabled</span></button
-      ><a class='btn mg-b-4 disabled'>a <span class='text-code'>.btn .disabled</span></a
+      <button class="d-block mg-b-4" disabled>button <span class="text-code">:disabled</span></button
+      ><a class="btn mg-b-4 disabled">a <span class="text-code">.btn .disabled</span></a
       >
 
     </section>
@@ -465,103 +466,91 @@ ooh yea..</code></pre>
     <!--*************** DIALOG MODAL *******************-->
     <section>  
       
-      <h3 id='dialogs'>Dialog Modal <a href='#dialogs' class='linker' title='anchor to dialogs'>#</a></h3>
+      <h3 id="dialogs">Dialog Modal <a href="#dialogs" class="linker" title="anchor to dialogs">#</a></h3>
 
       <p>
-        Each button below has <code>dialog-btn-open</code> class and a <code>data-dialog-id</code> attribute that corresponds to a dialog modal's unique <code>#dialog-&lt;&lt;id&gt;&gt;</code>
+        Each button below has <code>dialog-btn-open</code> class and a <code>data-dialog-id</code> attribute that corresponds to a dialog modal's unique <code>#dialog-&lt;id&gt;</code>
       </p>
         
       <p>
-        <button class='dialog-btn-open mg-b-4 mg-r-2' data-dialog-id='0'>
+        <button class="dialog-btn-open mg-r-2" data-dialog-id="0">
           Open Dialog 1
         </button>
-        <button class='dialog-btn-open' data-dialog-id='foo'>
+        <button class="dialog-btn-open" data-dialog-id="foo">
           Open Dialog 2
         </button>
       </p>
 
-      <p>
-        Basic setup would be:
-      </p>
+      <label class="mg-b-0">Basic Setup:</label>
 
-<pre><code class='allselect'><span class='tag'>&lt;button class='dialog-btn-open' data-dialog-id='hello'&gt;</span>Open Dialog!<span class='tag'>&lt;button&gt;</span>
+<pre><code class="allselect"><span class="tag">&lt;button class="dialog-btn-open" data-dialog-id="hello"&gt;</span>Open Dialog!<span class="tag">&lt;button&gt;</span>
 
-<span class='tag'>&lt;div class='dialog' id='dialog-hello&gt;</span>
-  <span class='tag'>&lt;div class='dialog-outer'&gt;</span> // Overlay to cover content &amp; close via click
-    <span class='tag'>&lt;div class='dialog-inner'&gt;</span> // Container for dialog content
-      <span class='tag'>&lt;button class='dialog-btn-close'&gt;</span>Close Dialog<span class='tag'>&lt;/button&gt;</span>
-      Why hello there, I am a dialog...
-    <span class='tag'>&lt;/div&gt;</span>
-  <span class='tag'>&lt;/div&gt;</span>
-<span class='tag'>&lt;/div&gt;</span>
+<span class="tag">&lt;div id="dialog-hello" class="dialog dialog-event-esc" aria-labelledby="dialog-title-hello"&gt;</span>
+  <span class="tag">&lt;div class="dialog-outer dialog-event-outer-close"&gt;</span>
+    <span class="tag">&lt;div class="dialog-inner"&gt;</span>
+      <span class="tag">&lt;h2 id="dialog-title-hello"&gt;</span>Why hello there, I am a dialog...<span class="tag">&lt;/h2&gt;</span>
+      <span class="tag">&lt;button class="dialog-btn-close" data-dialog-id="hello"&gt;</span>Close Dialog Button<span class="tag">&lt;/button&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
 </code></pre>
-  
-      <div class='pd-t-4'></div>
 
-      <hr>
-
-      <div class='pd-t-4'></div>
-
-      <h6>Usability Notes</h6>
-
-      <p>
-        <ul>
-          <li>The <b>open</b> button adds a <code>keydown</code> listener that will close the dialog on <code>ESC</code></li>
-          <li>This will also remove the listener (so <code>ESC</code> doesn't hide every dialog)</li>
-          <li>The <b>close</b> button and <b>overlay-div</b> function the same way</li>
-          <li><em>On dialog open</em> - focus is given to the <b>close</b> button</li>
-          <li><em>On dialog close</em> - focus is given back to the <b>open</b> button</li>
-        </ul>
-      </p>
+      <label>Optional</label>
+      <ul>
+        <li><code>.dialog-event-esc</code> -- This will use the ESC key to close the dialog</li>
+        <li><code>.dialog-event-outer-close</code> -- This will close the dialog when clicking on the outer area
+        </li>
+      </ul>
 
     </section>
-
 
     <!--*************** LOADER *******************-->
     <section>
 
-      <h3 id='loader'>Loader <a href='#loader' class='linker' title='anchor to loader'>#</a></h3>
+      <h3 id="loader">Loader <a href="#loader" class="linker" title="anchor to loader">#</a></h3>
 
       <p>
-        The small script <code>bonkr-loader.js</code> looks for an element with <code>#bonkr-loader</code> if it exists. <b>Onload</b>, its <code>show</code> class will be removed and it will be hidden. Class <code>loader</code> will style it as a fullscreen overlay.
+        <button class="btn" onclick="location.reload()">Reload to See</button>
       </p>
 
-      <p class='pd-b-8'>
-        <button onclick="location.reload()">Reload to See</button>
-      </p>
+      <ul>
+        <li><code>.loader</code> is styled as a fullscreen overlay, at <code>z-index: 500;</code></li>
+        <li>The small script <code>bonkr-loader.js</code> looks for <code>#bonkr-loader</code> (if it exists)</li>
+        <li><b>Onload</b>, <code>.show</code> will be removed to hide it</li>
+      </ul>
 
-<pre><code><span class='tag'>&lt;div id='bonkr-loader' class='loader show'&gt;</span>
+<pre><code><span class="tag">&lt;div id="bonkr-loader" class="loader show"&gt;</span>
   Loader content
-<span class='tag'>&lt;/div&gt;</span></code></pre>
+<span class="tag">&lt;/div&gt;</span></code></pre>
 
     </section>
 
     <!--*************** FORM, INPUTS *******************-->
     <section>  
 
-      <h3 id='forms'>Forms <a href='#forms' class='linker' title='anchor to forms'>#</a></h3>
+      <h3 id="forms">Forms <a href="#forms" class="linker" title="anchor to forms">#</a></h3>
       
       <form>
-      <label class='d-block text-center mg-b-3'>label <span class='text-code'>.d-block .text-center</span></label>
-        <div class='d-flx flx-row flx-children-1 flx-children-spc-1 flx-spc-1'>
-          <label>label<input type='text' placeholder='Text'></label>
-          <label>label<input type='email' placeholder='Email'></label>
+      <label class="d-block text-center mg-b-3">label <span class="text-code">.d-block .text-center</span></label>
+        <div class="d-flx flx-row flx-children-1 flx-children-spc-1 flx-spc-1">
+          <label>label<input type="text" placeholder="Text" style="margin-bottom:0;"></label>
+          <label>label<input type="email" placeholder="Email" style="margin-bottom:0;"></label>
         </div>
-        <input type='number' placeholder='0'>
-        <input type='tel' placeholder='000-000-0000'>
-        <input type='password' placeholder='********'>
-        <div class='d-flx flx-row flx-children-1 flx-children-spc-1 flx-spc-1'>
+        <input type="number" placeholder="0">
+        <input type="tel" placeholder="000-000-0000">
+        <input type="password" placeholder="********">
+        <div class="d-flx flx-row flx-children-1 flx-children-spc-1 flx-spc-1">
           <select>
-            <option value='one'>One</option>
-            <option value='two'>Two</option>
-            <option value='three'>Three</option>
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
           </select>
-          <input type='range'>
+          <input type="range">
         </div>
-        <textarea placeholder='Textarea'></textarea>
-        <input type='checkbox'><input type='checkbox' checked><br>
-        <input type='radio' name='radio'><input type='radio' name='radio' checked>
-        <input type='submit' class='d-block' value='Submit'>
+        <textarea placeholder="Textarea"></textarea>
+        <input type="checkbox"><input type="checkbox" checked><br>
+        <input type="radio" name="radio"><input type="radio" name="radio" checked>
+        <input type="submit" class="d-block" value="Submit">
       </form>
 
     </section>
@@ -611,14 +600,14 @@ ooh yea..</code></pre>
       </ul>
       
       <p>
-        <a href='#' class='btn pd-a-3 text-code'>.pd-a-3</a>
-        <a href='#' class='btn pd-a-0 pd-t-3 text-code'>.pd-t-3</a>
-        <a href='#' class='btn pd-a-0 pd-r-5 text-code'>.pd-r-5</a>
-        <a href='#' class='btn pd-a-0 pd-b-2 text-code'>.pd-b-2</a>
-        <a href='#' class='btn pd-a-0 pd-l-7 text-code'>.pd-l-7</a>
+        <a href="#" class="btn pd-a-3 text-code">.pd-a-3</a>
+        <a href="#" class="btn pd-a-0 pd-t-3 text-code">.pd-t-3</a>
+        <a href="#" class="btn pd-a-0 pd-r-5 text-code">.pd-r-5</a>
+        <a href="#" class="btn pd-a-0 pd-b-2 text-code">.pd-b-2</a>
+        <a href="#" class="btn pd-a-0 pd-l-7 text-code">.pd-l-7</a>
       </p>
 
-      <blockquote class='mg-t-6'>
+      <blockquote class="mg-t-6">
         Additionally, you can use <code>.pd-ch-#</code> to give direct children the same padding.
       </blockquote>
 
@@ -635,20 +624,20 @@ ooh yea..</code></pre>
       </ul>
 
       <div>
-        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-3'>
-          <a href='#' class='btn pd-a-0 mg-a-2 text-code'>.mg-a-2</a>
+        <div style="background: #999; display: inline-block; line-height: 0;" class="mg-b-3">
+          <a href="#" class="btn pd-a-0 mg-a-2 text-code">.mg-a-2</a>
         </div>
-        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-3'>
-          <a href='#' class='btn pd-a-0 mg-t-3 text-code'>.mg-t-3</a>
+        <div style="background: #999; display: inline-block; line-height: 0;" class="mg-b-3">
+          <a href="#" class="btn pd-a-0 mg-t-3 text-code">.mg-t-3</a>
           </div>
-        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-3'>
-          <a href='#' class='btn pd-a-0 mg-r-8 text-code'>.mg-r-8</a>
+        <div style="background: #999; display: inline-block; line-height: 0;" class="mg-b-3">
+          <a href="#" class="btn pd-a-0 mg-r-8 text-code">.mg-r-8</a>
         </div>
-        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-3'>
-          <a href='#' class='btn pd-a-0 mg-b-2 text-code'>.mg-b-2</a>
+        <div style="background: #999; display: inline-block; line-height: 0;" class="mg-b-3">
+          <a href="#" class="btn pd-a-0 mg-b-2 text-code">.mg-b-2</a>
         </div>
-        <div style='background: #999; display: inline-block; line-height: 0;' class='mg-b-3'>
-          <a href='#' class='btn pd-a-0 mg-l-4 text-code'>.mg-l-4</a>
+        <div style="background: #999; display: inline-block; line-height: 0;" class="mg-b-3">
+          <a href="#" class="btn pd-a-0 mg-l-4 text-code">.mg-l-4</a>
         </div>
       </div>
 
@@ -657,9 +646,9 @@ ooh yea..</code></pre>
     <!--*************** FLEXBOX *******************-->
     <section>  
       
-      <h3 id='flexbox'>Flexbox <a href='#flexbox' class='linker' title='anchor to flexbox'>#</a></h3>
+      <h3 id="flexbox">Flexbox <a href="#flexbox" class="linker" title="anchor to flexbox">#</a></h3>
       
-      <h4 class=''>Examples</h4>
+      <h4 class="">Examples</h4>
 
       <i>flex, row, wrap, shrink 0, margin -2rem, spacing 2rem</i>
 
@@ -667,14 +656,14 @@ ooh yea..</code></pre>
         <code>.d-flx .flx-row .flx-wr-w .flx-children-s-0 .flx-spc-2 .flx-children-spc-2 </code>
       </p>
       
-      <div class='d-flx flx-row flx-wr-w flx-children-s-0 flx-spc-2 flx-children-spc-2 mg-b-6'>
-        <button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
+      <div class="d-flx flx-row flx-wr-w flx-children-s-0 flx-spc-2 flx-children-spc-2 mg-b-6">
+        <button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
         >
       </div>
       
@@ -684,69 +673,69 @@ ooh yea..</code></pre>
         <code>.d-flx .flx-row .flx-wr-n .flx-children-s-1 .flx-children-spc-1 </code>
       </p>
       
-      <div class='mg-b-5 d-flx flx-row flx-wr-n flx-spc-1 flx-children-s-1 flx-children-spc-1'>
-        <button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button
-        ><button type='button'>flex child</button>
+      <div class="mg-b-5 d-flx flx-row flx-wr-n flx-spc-1 flx-children-s-1 flx-children-spc-1">
+        <button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button
+        ><button type="button">flex child</button>
       </div>
 
-      <h4 class='mg-b-0'>Parent Container Classes</h4>
+      <h4 class="mg-b-0">Parent Container Classes</h4>
 
       <p>
         <em>Define parent container as display flex, then add classes to customize or define children</em>
       </p>
 
-<pre><code class='pd-a-1'>
-  <span class='tag'>.d-flx {</span> display: flex; <span class='tag'>}</span>
-  <span class='tag'>.flx-row {</span> flex-direction: row; <span class='tag'>}</span>
-  <span class='tag'>.flx-col {</span> flex-direction: column; <span class='tag'>}</span>
+<pre><code class="pd-a-1">
+  <span class="tag">.d-flx {</span> display: flex; <span class="tag">}</span>
+  <span class="tag">.flx-row {</span> flex-direction: row; <span class="tag">}</span>
+  <span class="tag">.flx-col {</span> flex-direction: column; <span class="tag">}</span>
 
-  <span class='tag'>.flx-wr-n {</span> flex-wrap: nowrap; <span class='tag'>}</span>
-  <span class='tag'>.flx-wr-w {</span> flex-wrap: wrap; <span class='tag'>}</span>
-  <span class='tag'>.flx-wr-r > * {</span> flex-wrap: wrap-reverse; <span class='tag'>}</span>
+  <span class="tag">.flx-wr-n {</span> flex-wrap: nowrap; <span class="tag">}</span>
+  <span class="tag">.flx-wr-w {</span> flex-wrap: wrap; <span class="tag">}</span>
+  <span class="tag">.flx-wr-r > * {</span> flex-wrap: wrap-reverse; <span class="tag">}</span>
 
-  <span class='tag'>.flx-spc-1 {</span> margin-left: -0.3rem; margin-right: -0.3rem; <span class='tag'>}</span>
-  <span class='tag'>.flx-spc-2 {</span> margin-left: -0.59rem; margin-right: -0.59rem; <span class='tag'>}</span>
-  <span class='tag'>.flx-spc-3 {</span> margin-left: -0.88rem; margin-right: -0.88rem; <span class='tag'>}</span>
-  <span class='tag'>.flx-spc-4 {</span> margin-left: -1.18rem; margin-right: -1.18rem; <span class='tag'>}</span>
+  <span class="tag">.flx-spc-1 {</span> margin-left: -0.3rem; margin-right: -0.3rem; <span class="tag">}</span>
+  <span class="tag">.flx-spc-2 {</span> margin-left: -0.59rem; margin-right: -0.59rem; <span class="tag">}</span>
+  <span class="tag">.flx-spc-3 {</span> margin-left: -0.88rem; margin-right: -0.88rem; <span class="tag">}</span>
+  <span class="tag">.flx-spc-4 {</span> margin-left: -1.18rem; margin-right: -1.18rem; <span class="tag">}</span>
   
-  <span class='tag'>.flx-children-0  > * {</span> flex: 0; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-1 > * {</span> flex: 1; <span class='tag'>}</span>
+  <span class="tag">.flx-children-0  > * {</span> flex: 0; <span class="tag">}</span>
+  <span class="tag">.flx-children-1 > * {</span> flex: 1; <span class="tag">}</span>
   
-  <span class='tag'>.flx-children-g-0 > * {</span> flex-grow: 0; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-g-1 > * {</span> flex-grow: 1; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-s-0 > * {</span> flex-shrink: 0; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-s-1 > * {</span> flex-shrink: 1; <span class='tag'>}</span>
+  <span class="tag">.flx-children-g-0 > * {</span> flex-grow: 0; <span class="tag">}</span>
+  <span class="tag">.flx-children-g-1 > * {</span> flex-grow: 1; <span class="tag">}</span>
+  <span class="tag">.flx-children-s-0 > * {</span> flex-shrink: 0; <span class="tag">}</span>
+  <span class="tag">.flx-children-s-1 > * {</span> flex-shrink: 1; <span class="tag">}</span>
   
-  <span class='tag'>.flx-children-spc-1 > * {</span> margin: 0 0.3rem 0.6rem; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-spc-2 > * {</span> margin: 0 0.59rem 1.18rem; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-spc-3 > * {</span> margin: 0 0.88rem 1.76rem; <span class='tag'>}</span>
-  <span class='tag'>.flx-children-spc-4 > * {</span> margin: 0 1.18rem 2.36rem; <span class='tag'>}</span>
+  <span class="tag">.flx-children-spc-1 > * {</span> margin: 0 0.3rem 0.6rem; <span class="tag">}</span>
+  <span class="tag">.flx-children-spc-2 > * {</span> margin: 0 0.59rem 1.18rem; <span class="tag">}</span>
+  <span class="tag">.flx-children-spc-3 > * {</span> margin: 0 0.88rem 1.76rem; <span class="tag">}</span>
+  <span class="tag">.flx-children-spc-4 > * {</span> margin: 0 1.18rem 2.36rem; <span class="tag">}</span>
 
 </code></pre>
 
-      <h4 class='mg-b-0'>Children Classes</h4>
+      <h4 class="mg-b-0">Children Classes</h4>
 
       <p>
         <em>Define sizing proportions of flex children</em>
       </p>
 
-<pre><code class='pd-a-1'>
-  <span class='tag'>.flx-child-0 {</span> flex: 0; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-0-5 {</span> flex: 0.5; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-1 {</span> flex: 1; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-1-5 {</span> flex: 1.5; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-2 {</span> flex: 2; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-2-5 {</span> flex: 2.5; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-3 {</span> flex: 3; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-3-5 {</span> flex: 3.5; <span class='tag'>}</span>
-  <span class='tag'>.flx-child-4 {</span> flex: 4; <span class='tag'>}</span>
+<pre><code class="pd-a-1">
+  <span class="tag">.flx-child-0 {</span> flex: 0; <span class="tag">}</span>
+  <span class="tag">.flx-child-0-5 {</span> flex: 0.5; <span class="tag">}</span>
+  <span class="tag">.flx-child-1 {</span> flex: 1; <span class="tag">}</span>
+  <span class="tag">.flx-child-1-5 {</span> flex: 1.5; <span class="tag">}</span>
+  <span class="tag">.flx-child-2 {</span> flex: 2; <span class="tag">}</span>
+  <span class="tag">.flx-child-2-5 {</span> flex: 2.5; <span class="tag">}</span>
+  <span class="tag">.flx-child-3 {</span> flex: 3; <span class="tag">}</span>
+  <span class="tag">.flx-child-3-5 {</span> flex: 3.5; <span class="tag">}</span>
+  <span class="tag">.flx-child-4 {</span> flex: 4; <span class="tag">}</span>
 
 </code></pre>
 
@@ -775,25 +764,20 @@ ooh yea..</code></pre>
   <!--************************************************************-->
 
   <!-- Loader -->
-  <div id='bonkr-loader' class='loader'>
-    <div class='pos-abs-center text-center'>BONKR</div>
+  <div id="bonkr-loader" class="loader">
+    <div class="pos-abs-center text-center">BONKR</div>
   </div>
 
   <!-- Dialog 1 -->
-  <div class='dialog' id='dialog-0' role='dialog'>
-    <div class='dialog-outer'>
-      <div class='dialog-inner pd-a-4 w-mx-600'>
-        <header role='banner'>
+  <div class="dialog dialog-event-esc" id="dialog-0" role="dialog">
+    <div class="dialog-outer dialog-event-outer-close">
+      <div class="dialog-inner pd-a-4 w-mx-600">
+        <header role="banner">
           <h3>Dialog 1</h3>
-          <button aria-label='close dialog' class='dialog-btn-close' type='button'>X</button>
+          <button aria-label="close dialog" class="dialog-btn-close" data-dialog-id="0" type="button">X</button>
         </header>
         <div>
-          <ul>
-            <li>"Close" button is focused</li>
-            <li>ESC key, or click on dialog mask closes dialog</li>
-            <li>"Open" dialog button focused on close</li>
-          </ul>
-          <hr class='mg-t-5 mg-b-5'>
+          <p>This dialog will close with the ESC key, because of the <code>"dialog-event-esc"</code> class</p>
           <ul>
             <li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li><li>Filler text</li>
           </ul>
@@ -803,16 +787,16 @@ ooh yea..</code></pre>
   </div>
 
   <!-- Dialog 2 -->
-  <div class='dialog center' id='dialog-foo' role='dialog'>
-    <div class='dialog-outer'>
-      <div class='dialog-inner pd-a-4 w-mx-600'>
-        <header role='banner'>
+  <div class="dialog center" id="dialog-foo" role="dialog">
+    <div class="dialog-outer dialog-event-outer-close">
+      <div class="dialog-inner pd-a-4 w-mx-600">
+        <header role="banner">
           <h3>Dialog 2</h3>
-          <button aria-label='close dialog' class='dialog-btn-close' type='button'>X</button>
+          <button aria-label="close dialog" class="dialog-btn-close" data-dialog-id="foo" type="button">X</button>
         </header>
         <div>
           <p>
-            <span class='text-code'>.dialog.center</span>
+            <span class="text-code">.dialog.center</span>
           </p>
         </div>
       </div>
